@@ -101,9 +101,9 @@ public class SysUserServiceImpl implements SysUserService {
         page.setSize(sysUserReq.getPageSize()).setPages(sysUserReq.getPageNo());
         LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
         //TODO 条件查询
+        sysUserReq.setDelFlag("0");
         queryWrapper.eq(SysUser::getDelFlag,sysUserReq.getDelFlag());
         Page<SysUser> selectPage = sysUserDao.selectPage(page, queryWrapper);
-        System.out.println(selectPage);
         List<SysUserResp> sysUserRespList = SysUserEntityToRespConverter
                 .INSTANCE.convertListEntityToResp(selectPage.getRecords());
         PageResult<SysUserResp> pageResult = new PageResult<>();

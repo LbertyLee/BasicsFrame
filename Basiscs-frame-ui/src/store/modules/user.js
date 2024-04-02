@@ -1,4 +1,4 @@
-import { login, logout, getInfo } from '@/api/login'
+import { login, logout, getInfo ,getRole} from '@/api/login'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 import { resetRouter } from '@/router'
 
@@ -63,8 +63,16 @@ const actions = {
       })
     })
   },
+  //获取路由信息
+  getRole(){
+    return new Promise((resolve, reject) => {
+      getRole(state.token).then(()=>{
+        
+      })
+    })
+  },
 
-  // user logout
+  // 退出登录
   logout({ commit, state }) {
     return new Promise((resolve, reject) => {
       logout(state.token).then(() => {

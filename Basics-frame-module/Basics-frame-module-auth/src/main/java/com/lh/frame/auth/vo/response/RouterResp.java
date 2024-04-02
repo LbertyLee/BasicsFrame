@@ -26,11 +26,4 @@ public class RouterResp {
 
     private Meta meta;
 
-    @Data
-    static
-    class Meta {
-        private String icon;
-        private  String link;
-        private  String title;
-    }
 }

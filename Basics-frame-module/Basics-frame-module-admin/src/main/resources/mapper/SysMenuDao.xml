@@ -13,7 +13,8 @@
             m.icon,
             m.path,
             m.component,
-            m.parent_id
+            m.parent_id,
+            m.perms
         FROM
             frame_sys_menu AS m
                 LEFT JOIN frame_sys_role_menu AS rm ON m.menu_id = rm.menu_id

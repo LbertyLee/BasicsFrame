@@ -6,6 +6,7 @@ import com.lh.frame.auth.service.AuthServer;
 import com.lh.frame.auth.vo.request.LoginReq;
 import com.lh.frame.auth.vo.response.LoginResp;
 import com.lh.frame.common.entity.Result;
+import com.lh.frame.common.utils.SecurityUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,8 +42,7 @@ public class LoginController {
     }
     @GetMapping("/getRoleByLoginId")
     public Result getRoleByLoginId(){
-        SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
-        Long loginId = (Long) tokenInfo.loginId;
+        Long loginId = SecurityUtils.getUserId();
         return Result.ok(authServer.getRoleByLoginId(loginId));
     }
 

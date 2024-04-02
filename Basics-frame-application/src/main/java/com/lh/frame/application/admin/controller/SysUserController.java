@@ -27,7 +27,7 @@ public class SysUserController {
      * 获取用户列表
      */
     @GetMapping("/list")
-    public Result<PageResult<SysUserResp>> listSysUser( @RequestBody  SysUserReq sysUserReq) {
+    public Result<PageResult<SysUserResp>> listSysUser(SysUserReq sysUserReq) {
     return Result.ok(sysUserService.listSysUser(sysUserReq));
     }
 

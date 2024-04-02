@@ -22,3 +22,9 @@ export function logout() {
     method: 'post'
   })
 }
+export function getRole(){
+  return request({
+    url: '/getRole',
+    method: 'get'
+  })
+}

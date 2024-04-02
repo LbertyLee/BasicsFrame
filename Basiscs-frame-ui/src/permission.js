@@ -28,12 +28,18 @@ router.beforeEach(async(to, from, next) => {
     } else {
       const hasGetUserInfo = store.getters.name
       if (hasGetUserInfo) {
+        //获取路由信息
+        store.dispatch('GenerateRoutes').then(accessRoutes => {
+          // 根据roles权限生成可访问的路由表
+          router.addRoutes(accessRoutes) // 动态添加可访问路由表
+          next({ ...to, replace: true }) // hack方法 确保addRoutes已完成
+        })
         next()
       } else {
         try {
-          // get user info
+          //获取用户信息
           await store.dispatch('user/getInfo')
-
+          
           next()
         } catch (error) {
           // remove token and go to login page to re-login

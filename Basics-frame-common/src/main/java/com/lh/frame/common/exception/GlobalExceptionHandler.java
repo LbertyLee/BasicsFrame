@@ -45,6 +45,14 @@ public class GlobalExceptionHandler {
         log.error("请求地址'{}',参数校验异常.", requestURI, e);
         return Result.fail(e.getMessage());
     }
-
+    /**
+     *业务异常
+     */
+    @ExceptionHandler(ServiceException.class)
+    public Result serviceExceptionHandler(ServiceException e, HttpServletRequest request) {
+        String requestURI = request.getRequestURI();
+        log.error("请求地址'{}',业务异常.", requestURI, e);
+        return Result.fail(e.getMessage());
+    }
 
 }

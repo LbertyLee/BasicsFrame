@@ -1,6 +1,7 @@
 package com.lh.frame.admin.entity;
 
 import java.util.Date;
+import java.util.List;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -55,6 +56,8 @@ public class SysMenu {
     private Date updateTime;
     //备注
     private String remark;
+
+    private List<SysMenu> child;
 
     }
 
