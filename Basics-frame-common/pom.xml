@@ -161,6 +161,13 @@
             <artifactId>tomcat-embed-core</artifactId>
         </dependency>
 
+        <!-- jakarta.validation-api -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
+
+
 
     </dependencies>
 

@@ -2,9 +2,12 @@ package com.lh.frame.admin.entity;
 
 import java.util.Date;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
@@ -15,11 +18,13 @@ import java.io.Serializable;
  * @since 2024-03-31 19:35:08
  */
 @Data
+@Accessors(chain = true)
 @TableName("frame_sys_user")
 public class SysUser  {
     //索引
     private Long id;
     //用户ID
+    @TableId(type = IdType.ASSIGN_ID)
     private Long userId;
     //用户账号
     private String userName;

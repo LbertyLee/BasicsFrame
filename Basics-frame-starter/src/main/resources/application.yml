@@ -66,3 +66,8 @@ sa-token:
   token-style:
   # 是否输出操作日志
   is-log:
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+

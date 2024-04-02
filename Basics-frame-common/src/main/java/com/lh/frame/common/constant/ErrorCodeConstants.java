@@ -26,12 +26,16 @@ public class ErrorCodeConstants {
 
     // 二维码不存在
     public static final String QRCODE_NOT_EXIST = "QRCODE_NOT_EXIST";
+
     // 二维码已过期
     public static final String QRCODE_EXPIRED = "QRCODE_EXPIRED";
+
     // 二维码已被使用
     public static final String QRCODE_USED = "QRCODE_USED";
+
     // 二维码还未被扫描
     public static final String QRCODE_NOT_SCAN = "QRCODE_NOT_SCAN";
+
     // 短信超过发送限制
     public static final String SMS_SEND_LIMIT = "SMS_SEND_LIMIT";
     // 需要验证码才可发送短信

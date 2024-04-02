@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="" />
+    <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/SystemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/TreeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/dao/SysMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/dao/SysRoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/dao/SysUserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/SysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/SysRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/SysUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/resources/mapper/SysMenuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/resources/mapper/SysRoleMenuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/resources/mapper/SysUserRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/response/RouterResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/auth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/auth/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/ErrorCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/ErrorCodeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/convert/SysUserEntityToRespConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/convert/SysUserEntityToRespConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/domain/vo/request/SysUserReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/domain/vo/request/SysUserReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/AuthServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/AuthServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/impl/AuthServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/impl/AuthServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/request/LoginReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/request/LoginReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +84,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2eRu40awVfWxAqT9cHifUjbOsZd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,13 +102,14 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-starter/src/main/resources",
+    "last_opened_file_path": "E:/programming/java/lh-club/lh-club",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm",
+    "spring.configuration.checksum": "902920a7ca612862f9635cee871ef162",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -68,13 +118,16 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common\entity" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-admin\src\main\resources\mapper" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common\exception" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-admin\src\main\resources\mapper" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-auth\src\main\java\com\lh\frame\auth\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
@@ -87,19 +140,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="BasicsFrame" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="BasicsFrame" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BasicsFrameApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Basics-frame-starter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lh.frame.BasicsFrameApplication" />
@@ -128,12 +168,24 @@
       <option name="presentableId" value="Default" />
       <updated>1711879517223</updated>
       <workItem from="1711879518894" duration="32000" />
-      <workItem from="1711879626988" duration="14378000" />
+      <workItem from="1711879626988" duration="14794000" />
+      <workItem from="1711947997963" duration="23665000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

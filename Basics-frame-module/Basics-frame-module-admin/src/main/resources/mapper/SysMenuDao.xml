@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lh.frame.admin.dao.SysMenuDao">
+
+
+
+
+    <!-- 根据用户ID查询菜单 -->
+    <select id="selectListByUserId" resultType="com.lh.frame.admin.entity.SysMenu" parameterType="long">
+        SELECT DISTINCT
+            m.menu_id,
+            m.menu_name,
+            m.icon,
+            m.path,
+            m.component,
+            m.parent_id
+        FROM
+            frame_sys_menu AS m
+                LEFT JOIN frame_sys_role_menu AS rm ON m.menu_id = rm.menu_id
+                LEFT JOIN frame_sys_role AS r ON rm.role_id = r.role_id
+                LEFT JOIN frame_sys_user_role AS ur ON ur.role_id = r.role_id
+                LEFT JOIN frame_sys_user AS u ON u.user_id = ur.user_id
+        WHERE
+            u.user_id = #{userId}
+          AND m.visible = 0
+    </select>
+</mapper>
