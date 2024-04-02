@@ -16,6 +16,7 @@
         <module>Basics-frame-application</module>
         <module>Basics-frame-starter</module>
         <module>Basics-frame-module/Basics-frame-module-auth</module>
+        <module>Basics-frame-module/Basics-frame-module-oss</module>
     </modules>
 
     <properties>

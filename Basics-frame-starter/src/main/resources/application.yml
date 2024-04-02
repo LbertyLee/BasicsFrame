@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 8088
 spring:
   profiles:
     active: dev
@@ -67,7 +67,13 @@ sa-token:
   # 是否输出操作日志
   is-log:
 
+
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
 
+minio:
+  url:
+  accessKey:
+  secretKey:

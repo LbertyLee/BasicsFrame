@@ -47,10 +47,10 @@ export const constantRoutes = [
         meta: { title: '用户管理',icon: 'user' },
       },
       {
-        path: '角色管理',
-        component: () => import('@/views/system/role/index'),
-        name: '角色管理',
-        meta: { title: '角色管理',icon:'el-icon-s-custom' }
+        path: '文件管理',
+        component: () => import('@/views/system/file/index'),
+        name: '文件管理',
+        meta: { title: '文件管理',icon:'el-icon-tickets' }
       }
     ]
   },

@@ -5,32 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/convert/SysMenuToRouterConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/response/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/oss/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/AliStorageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/MinioStorageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/StorageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/config/MinioConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/FileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/enums/OssTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/utils/MinioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/auth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/auth/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/TreeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/resources/mapper/SysMenuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/resources/mapper/SysMenuDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/AuthServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/AuthServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/impl/AuthServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/service/impl/AuthServerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/response/RouterResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/src/main/java/com/lh/frame/auth/vo/response/RouterResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/components/Breadcrumb/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/permission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/dashboard/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/user/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/user/profile/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +74,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/lihong/Desktop/RuoYi-Vue",
+    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,21 +95,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-oss\src\main\java\com\lh\frame\oss" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common\entity" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-admin\src\main\resources\mapper" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common\exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lh.frame.oss.utils" />
+      <recent name="com.lh.frame.oss.entity" />
+      <recent name="com.lh.frame.oss.config" />
       <recent name="com.lh.frame.auth.vo.response" />
       <recent name="com.lh.frame.common.exception" />
-      <recent name="com.lh.frame.common.config" />
-      <recent name="com.lh.frame.enums" />
-      <recent name="com.lh.frame.entity" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,7 +142,7 @@
       <updated>1711879517223</updated>
       <workItem from="1711879518894" duration="32000" />
       <workItem from="1711879626988" duration="14794000" />
-      <workItem from="1711947997963" duration="34374000" />
+      <workItem from="1711947997963" duration="37575000" />
     </task>
     <servers />
   </component>
