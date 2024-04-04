@@ -55,4 +55,14 @@ public class GlobalExceptionHandler {
         return Result.fail(e.getMessage());
     }
 
+    /**
+     *文件操作
+     */
+    @ExceptionHandler(FileException.class)
+    public Result serviceExceptionHandler(FileException e, HttpServletRequest request) {
+        String requestURI = request.getRequestURI();
+        log.error("请求地址'{}',文件操作异常.", requestURI, e);
+        return Result.fail(e.getMessage());
+    }
+
 }

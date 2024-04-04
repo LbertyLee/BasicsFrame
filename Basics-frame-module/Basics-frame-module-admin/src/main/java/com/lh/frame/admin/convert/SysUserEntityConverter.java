@@ -10,8 +10,8 @@ import java.util.List;
 
 @Mapper
 
-public interface SysUserEntityToRespConverter {
-    SysUserEntityToRespConverter INSTANCE = Mappers.getMapper(SysUserEntityToRespConverter.class);
+public interface SysUserEntityConverter {
+    SysUserEntityConverter INSTANCE = Mappers.getMapper(SysUserEntityConverter.class);
 
     SysUserResp convertEntityToResp(SysUser sysUser);
 

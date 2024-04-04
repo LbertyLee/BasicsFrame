@@ -15,7 +15,7 @@ public class PageInfo implements Serializable {
 
     private Integer pageNo = 1;
 
-    private Integer pageSize = 20;
+    private Integer pageSize = 10;
 
     public Integer getPageNo() {
         if (pageNo == null || pageNo < 1) {

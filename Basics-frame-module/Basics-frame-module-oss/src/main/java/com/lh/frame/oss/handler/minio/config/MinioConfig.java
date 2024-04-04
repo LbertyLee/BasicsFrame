@@ -1,4 +1,4 @@
-package com.lh.frame.oss.config;
+package com.lh.frame.oss.handler.minio.config;
 
 import io.minio.MinioClient;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,19 +13,19 @@ public class MinioConfig {
     /**
      * minioUrl
      */
-    @Value("${minio.url}")
+    @Value("${oss.minio.url}")
     private String url;
 
     /**
      * minio账户
      */
-    @Value("${minio.accessKey}")
+    @Value("${oss.minio.accessKey}")
     private String accessKey;
 
     /**
      * minio密码
      */
-    @Value("${minio.secretKey}")
+    @Value("${oss.minio.secretKey}")
     private String secretKey;
 
     /**
@@ -33,7 +33,10 @@ public class MinioConfig {
      */
     @Bean
     public MinioClient getMinioClient() {
-        return MinioClient.builder().endpoint(url).credentials(accessKey, secretKey).build();
+        return MinioClient.builder()
+                .endpoint(url)
+                .credentials(accessKey, secretKey)
+                .build();
     }
 
 }

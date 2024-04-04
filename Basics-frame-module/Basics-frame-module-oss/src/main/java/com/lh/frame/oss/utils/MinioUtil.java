@@ -1,11 +1,11 @@
 package com.lh.frame.oss.utils;
 
 
-import com.lh.frame.oss.entity.FileInfo;
 import io.minio.*;
 import io.minio.http.Method;
 import io.minio.messages.Bucket;
 import io.minio.messages.Item;
+import org.apache.tomcat.jni.FileInfo;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -52,20 +52,20 @@ public class MinioUtil {
     /**
      * 列出当前桶及文件
      */
-    public List<FileInfo> getAllFile(String bucket) throws Exception {
-        Iterable<Result<Item>> results = minioClient.listObjects(
-                ListObjectsArgs.builder().bucket(bucket).build());
-        List<FileInfo> fileInfoList = new LinkedList<>();
-        for (Result<Item> result : results) {
-            FileInfo fileInfo = new FileInfo();
-            Item item = result.get();
-            fileInfo.setFileName(item.objectName());
-            fileInfo.setDirectoryFlag(item.isDir());
-            fileInfo.setEtag(item.etag());
-            fileInfoList.add(fileInfo);
-        }
-        return fileInfoList;
-    }
+//    public List<FileInfo> getAllFile(String bucket) throws Exception {
+//        Iterable<Result<Item>> results = minioClient.listObjects(
+//                ListObjectsArgs.builder().bucket(bucket).build());
+//        List<FileInfo> fileInfoList = new LinkedList<>();
+//        for (Result<Item> result : results) {
+//            FileInfo fileInfo = new FileInfo();
+//            Item item = result.get();
+//            fileInfo.setFileName(item.objectName());
+//            fileInfo.setDirectoryFlag(item.isDir());
+//            fileInfo.setEtag(item.etag());
+//            fileInfoList.add(fileInfo);
+//        }
+//        return fileInfoList;
+//    }
 
     /**
      * 下载文件

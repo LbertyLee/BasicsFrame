@@ -72,8 +72,15 @@ sa-token:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
-
-minio:
-  url:
-  accessKey:
-  secretKey:
+oss:
+  minio:
+    url:
+    accessKey:
+    secretKey:
+  aoliyun:
+    region:
+    accessKeyId:
+    accessKeySecret:
+    roleArn:
+    bucketName:
+    endpoint:

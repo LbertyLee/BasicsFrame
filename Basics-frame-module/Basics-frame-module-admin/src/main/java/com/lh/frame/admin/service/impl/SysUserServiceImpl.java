@@ -6,13 +6,13 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.lh.frame.admin.convert.SysUserEntityToRespConverter;
+import com.lh.frame.admin.convert.SysUserEntityConverter;
 import com.lh.frame.admin.dao.SysUserDao;
 import com.lh.frame.admin.domain.vo.request.SysUserReq;
 import com.lh.frame.admin.domain.vo.response.SysUserResp;
 import com.lh.frame.admin.entity.SysUser;
 import com.lh.frame.admin.service.SysUserService;
-import com.lh.frame.common.entity.PageInfo;
+import com.lh.frame.common.constant.basic.SystemConstants;
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.exception.SystemException;
 import org.springframework.stereotype.Service;
@@ -35,9 +35,37 @@ public class SysUserServiceImpl implements SysUserService {
 
     private final static String SALT = "sajgdasyf";
 
+
+    /**
+     * 构建查询条件
+     * @param queryWrapper
+     * @param sysUserReq
+     * @return
+     */
+    private LambdaQueryWrapper<SysUser> getQueryWrapper(LambdaQueryWrapper<SysUser> queryWrapper,SysUserReq sysUserReq) {
+        //用户名
+        if (!StringUtils.isEmpty(sysUserReq.getUserName())) {
+            queryWrapper.like(SysUser::getUserName, sysUserReq.getUserName());
+        }
+        //手机号
+        if (!StringUtils.isEmpty(sysUserReq.getPhonenumber())) {
+            queryWrapper.like(SysUser::getPhonenumber, sysUserReq.getPhonenumber());
+        }
+        //状态
+        if (!StringUtils.isEmpty(sysUserReq.getStatus())) {
+            queryWrapper.eq(SysUser::getStatus, sysUserReq.getStatus());
+        }
+        //删除标志
+        queryWrapper.eq(SysUser::getDelFlag, SystemConstants.NO_DELETE);
+
+        return queryWrapper;
+    }
+
+
+
     @Override
     public void addSysUser(SysUserReq sysUserReq) {
-        SysUser sysUser = SysUserEntityToRespConverter.INSTANCE.convertReqToEntity(sysUserReq);
+        SysUser sysUser = SysUserEntityConverter.INSTANCE.convertReqToEntity(sysUserReq);
         sysUser.setPassword(SaSecureUtil.md5BySalt(sysUserReq.getPassword(), SALT));
         //检查用户是否存在
         Boolean aBoolean = checkUserName(sysUser.getUserName());
@@ -57,7 +85,7 @@ public class SysUserServiceImpl implements SysUserService {
         LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(SysUser::getUserId, id);
         SysUser sysUsers = sysUserDao.selectOne(queryWrapper);
-        return SysUserEntityToRespConverter.INSTANCE.convertEntityToResp(sysUsers);
+        return SysUserEntityConverter.INSTANCE.convertEntityToResp(sysUsers);
     }
 
     @Override
@@ -84,7 +112,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public void updateSysUser(SysUserReq sysUserReq) {
-        SysUser sysUser = SysUserEntityToRespConverter.INSTANCE.convertReqToEntity(sysUserReq);
+        SysUser sysUser = SysUserEntityConverter.INSTANCE.convertReqToEntity(sysUserReq);
         LambdaUpdateWrapper<SysUser> updateWrapper = new LambdaUpdateWrapper<>();
         updateWrapper.eq(SysUser::getUserId, sysUserReq.getUserId());
         try {
@@ -99,13 +127,11 @@ public class SysUserServiceImpl implements SysUserService {
     public PageResult<SysUserResp> listSysUser(SysUserReq sysUserReq) {
         Page<SysUser> page = new Page<>();
         page.setSize(sysUserReq.getPageSize()).setPages(sysUserReq.getPageNo());
-        LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
-        //TODO 条件查询
-        sysUserReq.setDelFlag("0");
-        queryWrapper.eq(SysUser::getDelFlag,sysUserReq.getDelFlag());
+        LambdaQueryWrapper<SysUser> queryWrapper = this.getQueryWrapper(new LambdaQueryWrapper<>(), sysUserReq);
         Page<SysUser> selectPage = sysUserDao.selectPage(page, queryWrapper);
-        List<SysUserResp> sysUserRespList = SysUserEntityToRespConverter
+        List<SysUserResp> sysUserRespList = SysUserEntityConverter
                 .INSTANCE.convertListEntityToResp(selectPage.getRecords());
+        //封装分页结果
         PageResult<SysUserResp> pageResult = new PageResult<>();
         pageResult.setResult(sysUserRespList);
         pageResult.setTotal((int) selectPage.getTotal());

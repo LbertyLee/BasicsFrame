@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: basics-frame
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.200.129:8848
+        prefix: ${spring.application.name}
+        group: BASICS_FRAME
+        namespace:
+        file-extension: yaml

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.lh.frame.common.entity.BaseEntity;
 import lombok.Data;
 
 /**
@@ -15,9 +16,7 @@ import lombok.Data;
 @Data
 @SuppressWarnings("serial")
 @TableName("frame_sys_menu")
-public class SysMenu {
-    //索引
-    private Integer id;
+public class SysMenu extends BaseEntity {
 
     //菜单ID
     private Long menuId;
@@ -46,18 +45,10 @@ public class SysMenu {
     private String perms;
     //菜单图标
     private String icon;
-    //创建者
-    private String createBy;
-    //创建时间
-    private Date createTime;
-    //更新者
-    private String updateBy;
-    //更新时间
-    private Date updateTime;
     //备注
     private String remark;
 
     private List<SysMenu> child;
 
-    }
+}
 

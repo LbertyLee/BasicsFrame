@@ -1,54 +1,26 @@
 package com.lh.frame.oss.service;
 
+import com.lh.frame.oss.entity.dto.UploadMultipartFile;
+import com.lh.frame.oss.entity.vo.request.FileReq;
+import com.lh.frame.oss.entity.vo.response.FileResp;
+import io.minio.errors.*;
 
-import com.lh.frame.oss.adapter.StorageAdapter;
-import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
+import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 
-import java.io.InputStream;
-import java.util.List;
-
-/**
- * 文件存储service
-
- */
-@Service
-public class FileService {
-
-    private final StorageAdapter storageAdapter;
-
-
-    public FileService(StorageAdapter storageAdapter) {
-        this.storageAdapter = storageAdapter;
-    }
-
-    /**
-     * 列出所有桶
-     */
-    public List<String> getAllBucket() {
-        return storageAdapter.getAllBucket();
-    }
-
-    /**
-     * 获取文件路径
-     */
-    public String getUrl(String bucketName,String objectName) {
-        return storageAdapter.getUrl(bucketName,objectName);
-    }
+public interface FileService {
 
 
     /**
-     * 上传文件
+     * 小文件上传的接口方法。
+     *
+     * @param uploadMultipartFile 一个包含待上传文件信息的对象，通常包括文件内容、文件名等。
+     * @param fileReq 包含上传文件请求参数的对象，例如文件类型、目标存储路径等。
+     * @return 返回一个文件响应对象，里面包含了上传结果的信息，例如文件的存储路径、上传状态等。
      */
-    public String uploadFile(MultipartFile uploadFile, String bucket, String objectName){
-        storageAdapter.uploadFile(uploadFile,bucket,objectName);
-        objectName = objectName + "/" + uploadFile.getOriginalFilename();
-        return storageAdapter.getUrl(bucket, objectName);
-    }
+    FileResp upLoad(UploadMultipartFile uploadMultipartFile, FileReq fileReq) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException;
 
-    public InputStream downLoad(String bucket, String objectName) {
-       return storageAdapter.downLoad(bucket, objectName);
 
-    }
+
 }
-

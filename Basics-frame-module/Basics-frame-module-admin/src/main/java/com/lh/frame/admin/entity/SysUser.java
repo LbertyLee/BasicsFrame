@@ -1,12 +1,14 @@
 package com.lh.frame.admin.entity;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
@@ -20,6 +22,8 @@ import java.io.Serializable;
 @Data
 @Accessors(chain = true)
 @TableName("frame_sys_user")
+@AllArgsConstructor
+@NoArgsConstructor
 public class SysUser  {
     //索引
     private Long id;
@@ -48,14 +52,24 @@ public class SysUser  {
     private String delFlag;
     //最后登录IP
     private String loginIp;
+
     //创建者
-    private String createBy;
+    @TableField(value = "create_by",fill = FieldFill.INSERT)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private Long createBy;
+
+    @TableField(fill = FieldFill.INSERT)
     //创建时间
-    private Date createTime;
+    private LocalDateTime createTime;
+
     //更新者
-    private String updateBy;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private Long updateBy;
+
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     //更新时间
-    private Date updateTime;
+    private LocalDateTime updateTime;
     //备注
     private String remark;
 

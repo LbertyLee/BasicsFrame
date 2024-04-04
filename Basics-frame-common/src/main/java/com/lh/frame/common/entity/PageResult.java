@@ -1,5 +1,6 @@
 package com.lh.frame.common.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
