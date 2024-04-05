@@ -8,6 +8,7 @@ import com.lh.frame.oss.handler.minio.properties.OssMinioConfigProperties;
 import io.minio.*;
 import io.minio.errors.*;
 import io.minio.http.Method;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -99,8 +100,11 @@ public class OssFileStorageHandlerImpl extends AbsFileStorageHandler implements 
     }
 
     @Override
-    public void delete(String bucketName, String pathUrl) {
-
+    @SneakyThrows
+    public void delete(String bucketName, String filename) {
+        minioClient.removeObject(
+                RemoveObjectArgs.builder().bucket(bucketName).object(filename).build()
+        );
     }
 
     @Override

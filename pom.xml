@@ -12,7 +12,9 @@
     <modules>
         <module>Basics-frame-module</module>
         <module>Basics-frame-module/Basics-frame-module-admin</module>
-        <module>Basics-frame-common</module>
+        <module>Basics-frame-commons</module>
+        <module>Basics-frame-commons/Basics-frame-commons-mybatis-plus</module>
+        <module>Basics-frame-commons/Basics-frame-commons-task-job</module>
         <module>Basics-frame-application</module>
         <module>Basics-frame-starter</module>
         <module>Basics-frame-module/Basics-frame-module-auth</module>
@@ -33,16 +35,6 @@
             <version>2.7.1</version>
             <type>pom</type>
             <scope>import</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
     </dependencyManagement>

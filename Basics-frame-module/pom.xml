@@ -10,6 +10,13 @@
     </parent>
 
     <artifactId>Basics-frame-module</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Basics-frame-module-admin</module>
+        <module>Basics-frame-module-auth</module>
+        <module>Basics-frame-module-oss</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

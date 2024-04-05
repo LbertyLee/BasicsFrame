@@ -5,65 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/CacheConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/SuperConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/SystemConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/file/FileConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/FileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/handler/mybatis/AutoMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/EmptyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/RegisterBeanHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/package-info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/FileStorageAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/impl/FileStorageAdapterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/convert/FileEntityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/dao/FileDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/dto/UploadMultipartFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/vo/request/FileReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/vo/response/FileResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/AbsFileStorageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/FileStorageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/aliyun/impl/AilYunFileStorageHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/aliyun/properties/OssAliyunConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/minio/config/MinioConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/minio/impl/OssFileStorageHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/minio/properties/OssMinioConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/utils/FileUrlContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/resources/mapper/FileDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mybatis-plus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/src/main/java/com/lh/frame/task/jok/config/XxlJobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/src/main/java/com/lh/frame/task/jok/properties/XxlJobProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/jok/ClearFileHandlerJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/oss/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/oss/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/mybatis/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/package-info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/package-info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/config/mybatis/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mybatis-plus/src/main/java/com/lh/frame/mybatis/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/ErrorCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/ErrorCodeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/CacheConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/SuperConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/SuperConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/basic/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/constant/file/FileConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/file/FileConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/entity/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/enums/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/enums/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/AuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/FileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/FileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/exception/SystemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/SystemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/handler/mybatis/AutoMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mybatis-plus/src/main/java/com/lh/frame/mybatis/handler/AutoMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/EmptyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/EmptyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/RegisterBeanHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/RegisterBeanHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-common/src/main/java/com/lh/frame/common/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/convert/SysUserEntityToRespConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/convert/SysUserEntityConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/entity/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/domain/vo/request/SysUserReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-admin/src/main/java/com/lh/frame/admin/domain/vo/request/SysUserReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/AliStorageAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/MinioStorageAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/StorageAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/config/MinioConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/FileInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/FileStorageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/FileStorageAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/impl/FileStorageAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/impl/FileStorageAdapterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/vo/request/FileReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/entity/vo/request/FileReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/minio/impl/OssFileStorageHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/handler/minio/impl/OssFileStorageHandlerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/utils/MinioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/utils/MinioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/impl/FileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +108,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-common/src/main/java/com/lh/frame/common/constant",
+    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,24 +129,37 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-common\src\main\java\com\lh\frame\common\constant" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-oss" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-oss\src\main\java\com\lh\frame\oss\handler" />
-      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-oss\src\main\java\com\lh\frame\oss" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-commons\Basics-frame-commons-common\src\main\java\com\lh\frame\common" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-commons\Basics-frame-commons-common\src\main\java\com\lh\frame\common\constant" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-commons\Basics-frame-common-mybatis-plus\src\main\java\com\lh\frame\mybatis\handler" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-commons\Basics-frame-common-mybatis-plus\src\main\java\com\lh\frame\mybatis\config" />
+      <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-module\Basics-frame-module-task-job" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.lh.frame.common.utils" />
-      <recent name="com.lh.frame.oss.handler.minio.config" />
-      <recent name="com.lh.frame.oss.handler" />
-      <recent name="com.lh.frame.common.constant.file" />
-      <recent name="com.lh.frame.oss.adapter" />
+      <recent name="com.lh.frame.oss.jok" />
+      <recent name="com.lh.frame.task.jok.jok" />
+      <recent name="com.lh.frame.task.jok.config" />
+      <recent name="com.lh.frame.task.jok.properties" />
+      <recent name="com.lh.frame.config" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Basics-frame-commons" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Basics-frame-commons" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicsFrameApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Basics-frame-starter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lh.frame.BasicsFrameApplication" />
@@ -189,7 +192,8 @@
       <workItem from="1711947997963" duration="37575000" />
       <workItem from="1712209932671" duration="2139000" />
       <workItem from="1712213603765" duration="18069000" />
-      <workItem from="1712232915231" duration="4966000" />
+      <workItem from="1712232915231" duration="5437000" />
+      <workItem from="1712292186131" duration="8114000" />
     </task>
     <servers />
   </component>

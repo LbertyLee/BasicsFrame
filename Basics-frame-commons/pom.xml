@@ -7,30 +7,20 @@
         <groupId>com.lh.frame</groupId>
         <artifactId>BasicsFrame</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>Basics-frame-module-admin</artifactId>
+    <artifactId>Basics-frame-commons</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Basics-frame-commons-task-job</module>
+        <module>Basics-frame-commons-mybatis-plus</module>
+        <module>Basics-frame-commons-common</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-commons-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-        </dependency>
-
-
-
-    </dependencies>
-
 </project>

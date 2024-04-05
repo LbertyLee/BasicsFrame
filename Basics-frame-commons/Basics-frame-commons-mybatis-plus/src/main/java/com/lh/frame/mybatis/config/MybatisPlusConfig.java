@@ -1,10 +1,10 @@
-package com.lh.frame.common.config.mybatis;
+package com.lh.frame.mybatis.config;
 
 import com.baomidou.mybatisplus.core.incrementer.DefaultIdentifierGenerator;
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import com.lh.frame.common.handler.mybatis.AutoMetaObjectHandler;
+import com.lh.frame.mybatis.handler.AutoMetaObjectHandler;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

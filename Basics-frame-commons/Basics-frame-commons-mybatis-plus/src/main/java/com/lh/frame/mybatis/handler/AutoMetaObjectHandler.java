@@ -1,7 +1,8 @@
-package com.lh.frame.common.handler.mybatis;
+package com.lh.frame.mybatis.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.lh.frame.common.constant.basic.SuperConstant;
+
+
 import com.lh.frame.common.utils.EmptyUtil;
 import com.lh.frame.common.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;

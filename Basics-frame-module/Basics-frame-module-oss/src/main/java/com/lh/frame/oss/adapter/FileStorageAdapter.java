@@ -19,5 +19,10 @@ public interface FileStorageAdapter {
 
     String uploadFile(FileReq fileReq, InputStream inputStream) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException;
 
-
+    /**
+     * @Description 文件删除
+     * @param pathUrl 全路径
+     * @throws Exception
+     */
+    void delete(String storeFlag,String bucketName,String pathUrl);
 }

@@ -42,6 +42,10 @@ public class FileController {
         return Result.ok(fileResp);
     }
 
+    @DeleteMapping("/{fileId}")
+    public Result clearFileById(@PathVariable("fileId") String fileId) {
+        return Result.ok(fileService.clearFileById(fileId));
+    }
 
 
 

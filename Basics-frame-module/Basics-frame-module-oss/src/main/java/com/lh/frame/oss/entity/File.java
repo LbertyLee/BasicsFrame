@@ -1,9 +1,7 @@
 package com.lh.frame.oss.entity;
 
-import java.util.Date;
-
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @TableName("frame_file")
 @SuppressWarnings("serial")
-public class File extends Model<File> {
+public class File extends BaseEntity {
     //主键
     private Long id;
     //业务ID
@@ -45,14 +43,6 @@ public class File extends Model<File> {
     private String md5;
     //状态
     private String status;
-    //创建时间
-    private Date createTime;
-    //修改时间
-    private Date updateTime;
-    //创建人ID
-    private Long createBy;
-    //修改人ID
-    private Long updateBy;
     //是否有效
     private String dataState;
     //商户ID【系统内部识别使用】

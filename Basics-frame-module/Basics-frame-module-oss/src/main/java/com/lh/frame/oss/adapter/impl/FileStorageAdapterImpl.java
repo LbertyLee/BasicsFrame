@@ -1,5 +1,6 @@
 package com.lh.frame.oss.adapter.impl;
 
+
 import com.lh.frame.common.constant.file.FileConstant;
 import com.lh.frame.common.utils.EmptyUtil;
 import com.lh.frame.common.utils.RegisterBeanHandler;
@@ -40,5 +41,14 @@ public class FileStorageAdapterImpl implements FileStorageAdapter {
                 fileStorageHandlerString, FileStorageHandler.class);
         return fileStorageHandler.uploadFile(fileReq.getSuffix(),
                 fileReq.getFileName(), fileReq.getBucketName(), false, inputStream);
+    }
+
+    @Override
+    public void delete(String storeFlag, String bucketName, String pathUrl) {
+        String fileStorageHandlerString = EmptyUtil.isNullOrEmpty(storeFlag)?
+                fileStorageHandlers.get(FileConstant.MINIO_OSS):fileStorageHandlers.get(storeFlag);
+        FileStorageHandler fileStorageHandler = registerBeanHandler.getBean(
+                fileStorageHandlerString, FileStorageHandler.class);
+        fileStorageHandler.delete(bucketName, pathUrl);
     }
 }

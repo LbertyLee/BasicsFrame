@@ -22,5 +22,16 @@ public interface FileService {
     FileResp upLoad(UploadMultipartFile uploadMultipartFile, FileReq fileReq) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException;
 
 
+    /**
+     * @Description 删除文件
+     * @param fileId
+     * @return
+     */
+    Boolean clearFileById(String fileId);
 
+    /**
+     * @Description 定时清理文件
+     * @return
+     */
+    Boolean PeriodicallyClearFile();
 }

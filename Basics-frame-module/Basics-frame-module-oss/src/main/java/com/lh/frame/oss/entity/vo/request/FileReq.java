@@ -23,6 +23,9 @@ public class FileReq implements Serializable {
     /**文件名*/
     private String fileName;
 
+    /**文件夹*/
+    private String folder;
+
     /**访问路径*/
     private String pathUrl;
 
