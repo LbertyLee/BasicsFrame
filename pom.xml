@@ -10,15 +10,17 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Basics-frame-module</module>
-        <module>Basics-frame-module/Basics-frame-module-admin</module>
-        <module>Basics-frame-commons</module>
-        <module>Basics-frame-commons/Basics-frame-commons-mybatis-plus</module>
-        <module>Basics-frame-commons/Basics-frame-commons-task-job</module>
         <module>Basics-frame-application</module>
         <module>Basics-frame-starter</module>
+        <module>Basics-frame-module</module>
+        <module>Basics-frame-module/Basics-frame-module-admin</module>
         <module>Basics-frame-module/Basics-frame-module-auth</module>
         <module>Basics-frame-module/Basics-frame-module-oss</module>
+        <module>Basics-frame-commons</module>
+        <module>Basics-frame-commons/Basics-frame-commons-mybatis-plus</module>
+        <module>Basics-frame-commons/Basics-frame-commons-common</module>
+        <module>Basics-frame-commons/Basics-frame-commons-xxl-job</module>
+        <module>Basics-frame-commons/Basics-frame-commons-mq</module>
     </modules>
 
     <properties>

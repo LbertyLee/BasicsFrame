@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lh.frame</groupId>
-        <artifactId>BasicsFrame</artifactId>
+        <artifactId>Basics-frame-module</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>Basics-frame-application</artifactId>
+    <artifactId>Basics-frame-module-task</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,22 +18,19 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-module-admin</artifactId>
+            <artifactId>Basics-frame-commons-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
             <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-commons</artifactId>
+            <artifactId>Basics-frame-commons-xxl-job</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
             <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-module-auth</artifactId>
+            <artifactId>Basics-frame-commons-mq</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -42,13 +39,6 @@
             <artifactId>Basics-frame-module-oss</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-module-demo</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
 </project>

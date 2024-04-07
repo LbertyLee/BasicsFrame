@@ -5,23 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lh.frame</groupId>
-        <artifactId>BasicsFrame</artifactId>
+        <artifactId>Basics-frame-commons</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>Basics-frame-commons</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>Basics-frame-commons-mybatis-plus</module>
-        <module>Basics-frame-commons-common</module>
-        <module>Basics-frame-commons-xxl-job</module>
-        <module>Basics-frame-commons-mq</module>
-    </modules>
+    <artifactId>Basics-frame-commons-xxl-job</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.lh.frame</groupId>
+            <artifactId>Basics-frame-commons-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-job-core</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+    </dependencies>
+
 </project>

@@ -1,7 +1,6 @@
 package com.lh.frame.common.exception;
 
 
-import com.lh.frame.common.constant.ErrorCodeConstants;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

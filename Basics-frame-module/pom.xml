@@ -16,6 +16,8 @@
         <module>Basics-frame-module-admin</module>
         <module>Basics-frame-module-auth</module>
         <module>Basics-frame-module-oss</module>
+        <module>Basics-frame-module-task</module>
+        <module>Basics-frame-module-demo</module>
     </modules>
 
     <properties>

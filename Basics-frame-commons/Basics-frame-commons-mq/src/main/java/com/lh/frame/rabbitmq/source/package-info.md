@@ -1,0 +1,1 @@
+创建rabbitmq队列

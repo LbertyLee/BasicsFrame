@@ -2,7 +2,6 @@ package com.lh.frame.oss.service.impl;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.lh.frame.common.exception.FileException;
 import com.lh.frame.common.utils.EmptyUtil;
@@ -61,6 +60,8 @@ public class FileServiceImpl implements FileService {
             FileResp fileResp = FileEntityConverter.INSTANCE.convertEntityToResp(file);
             fileResp.setId(file.getId());
             //TODO 延期删除
+            //发送延迟信息:上传如果超过10分钟不进行文件业务绑定则会被消息队列清空
+
             return  fileResp;
         }catch (Exception e){
             log.error("文件上传异常");
