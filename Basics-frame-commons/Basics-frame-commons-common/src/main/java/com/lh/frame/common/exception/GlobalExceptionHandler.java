@@ -64,5 +64,13 @@ public class GlobalExceptionHandler {
         log.error("请求地址'{}',文件操作异常.", requestURI, e);
         return Result.fail(e.getMessage());
     }
-
+    /**
+     * 缓存异常
+     */
+    @ExceptionHandler(CacheException.class)
+    public Result cacheExceptionHandler(CacheException e, HttpServletRequest request) {
+        String requestURI = request.getRequestURI();
+        log.error("请求地址'{}',缓存操作异常.", requestURI, e);
+        return Result.fail(e.getMessage());
+    }
 }

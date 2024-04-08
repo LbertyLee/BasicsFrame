@@ -17,6 +17,7 @@
         <module>Basics-frame-commons-common</module>
         <module>Basics-frame-commons-xxl-job</module>
         <module>Basics-frame-commons-mq</module>
+        <module>Basics-frame-commons-redis</module>
     </modules>
 
     <properties>

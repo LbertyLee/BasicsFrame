@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class DelayListener {
+public class delayListener {
 
     @RabbitListener(queues = RabbitConstant.FILE_CLEAR_QUEUE)
     public void receive(String message){

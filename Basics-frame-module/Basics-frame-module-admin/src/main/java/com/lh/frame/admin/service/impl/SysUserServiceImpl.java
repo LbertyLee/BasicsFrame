@@ -15,6 +15,8 @@ import com.lh.frame.admin.service.SysUserService;
 import com.lh.frame.common.constant.basic.SystemConstants;
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.exception.SystemException;
+import com.lh.frame.redis.constant.UserCacheConstant;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -124,6 +126,7 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     @Override
+    @Cacheable(value = UserCacheConstant.PAGE,key = "#sysUserReq.pageNo+'-'+#sysUserReq.pageSize+'-'+#sysUserReq.hashCode()")
     public PageResult<SysUserResp> listSysUser(SysUserReq sysUserReq) {
         Page<SysUser> page = new Page<>();
         page.setSize(sysUserReq.getPageSize()).setPages(sysUserReq.getPageNo());
