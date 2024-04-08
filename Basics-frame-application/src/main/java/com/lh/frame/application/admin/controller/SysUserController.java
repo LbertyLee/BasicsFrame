@@ -5,6 +5,7 @@ import com.lh.frame.admin.domain.vo.response.SysUserResp;
 import com.lh.frame.admin.service.SysUserService;
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.entity.Result;
+import com.lh.frame.common.utils.ResultBuild;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +33,7 @@ public class SysUserController {
     @PostMapping("/list")
     public Result<PageResult<SysUserResp>> listSysUser(@RequestBody SysUserReq sysUserReq) {
         log.info("SysUserController.listSysUser.sysUserReq{}", sysUserReq);
-        return Result.ok(sysUserService.listSysUser(sysUserReq));
+        return ResultBuild.success(sysUserService.listSysUser(sysUserReq));
     }
 
     /**
@@ -42,7 +43,7 @@ public class SysUserController {
     public Result addSysUser(@RequestBody @Validated SysUserReq sysUserReq) {
         log.info("SysUserController.addSysUser.sysUserReq{}", sysUserReq);
         sysUserService.addSysUser(sysUserReq);
-        return Result.ok("新增系统用户成功");
+        return ResultBuild.success("新增系统用户成功");
     }
 
     /**
@@ -51,30 +52,30 @@ public class SysUserController {
      * @param userId 用户id
      */
     @GetMapping("/{userId}")
-    public Result getSysUserByUserId(@PathVariable("userId") Long userId) {
+    public Result<SysUserResp> getSysUserByUserId(@PathVariable("userId") Long userId) {
         log.info("SysUserController.getSysUserByUserId.userId{}", userId);
         SysUserResp sysUserResp = sysUserService.getSysUserByUserId(userId);
-        return Result.ok(sysUserResp);
+        return ResultBuild.success(sysUserResp);
     }
 
     /**
      * 删除用户
      */
     @DeleteMapping("/delete/{userId}")
-    public Result deleteSysUserByUserId(@PathVariable("userId") Long userId) {
+    public Result<String> deleteSysUserByUserId(@PathVariable("userId") Long userId) {
         log.info("SysUserController.deleteSysUserByUserId.userId{}", userId);
         sysUserService.deleteSysUserByUserId(userId);
-        return Result.ok("删除系统用户成功");
+        return ResultBuild.success("删除系统用户成功");
     }
 
     /**
      * 更新用户
      */
     @PutMapping("/update")
-    public Result updateSysUser(@RequestBody SysUserReq sysUserReq) {
+    public Result<String> updateSysUser(@RequestBody SysUserReq sysUserReq) {
         log.info("SysUserController.updateSysUser.sysUserReq{}", sysUserReq);
         sysUserService.updateSysUser(sysUserReq);
-        return Result.ok("更新系统用户成功");
+        return ResultBuild.success("更新系统用户成功");
     }
 
 

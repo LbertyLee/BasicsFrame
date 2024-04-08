@@ -1,6 +1,7 @@
 package com.lh.frame.application.demo.mq;
 
 import com.lh.frame.common.entity.Result;
+import com.lh.frame.common.utils.ResultBuild;
 import com.lh.frame.demo.mq.service.DirectSourceService;
 import com.lh.frame.rabbitmq.entity.MqMessage;
 import org.springframework.web.bind.annotation.*;
@@ -21,10 +22,10 @@ public class MqSourceController {
      * @return 返回一个结果对象，表示消息发送的状态。
      */
     @PostMapping("/direct")
-    public Result directSendMessage(@RequestBody MqMessage message) {
+    public Result<String> directSendMessage(@RequestBody MqMessage message) {
         // 调用服务，直接发送消息
         directSourceService.sendDirectMessage(message);
-        return Result.ok("发送成功");
+        return ResultBuild.success("发送成功");
     }
 
     /**
@@ -33,9 +34,9 @@ public class MqSourceController {
      * @return
      */
     @PostMapping("/produce")
-    public Result produceSendMessage(@RequestBody MqMessage message) {
+    public Result<String>  produceSendMessage(@RequestBody MqMessage message) {
         directSourceService.ProducerConsumerSentMessage(message);
-        return Result.ok("发送成功");
+        return ResultBuild.success("发送成功");
     }
 
     /**
@@ -44,9 +45,9 @@ public class MqSourceController {
      * @return
      */
     @PostMapping("/publish")
-    public Result publishSendMessage(@RequestBody MqMessage message) {
+    public Result<String>  publishSendMessage(@RequestBody MqMessage message) {
         directSourceService.PublishSubscribeSentMessage(message);
-        return Result.ok("发送成功");
+        return ResultBuild.success("发送成功");
 
     }
 
@@ -58,19 +59,19 @@ public class MqSourceController {
      *
      */
     @PostMapping("/topic")
-    public Result topicSendMessage(@RequestBody MqMessage message) {
+    public Result<String>  topicSendMessage(@RequestBody MqMessage message) {
         // 直接调用服务层方法，将消息发送到指定主题
         directSourceService.TopicSentMessage(message);
-        return Result.ok("发送成功");
+        return ResultBuild.success("发送成功");
     }
 
     /**
      * 延迟消息发送。
      */
     @PostMapping("/delay")
-    public Result delaySendMessage(@RequestBody MqMessage message) {
+    public Result<String>  delaySendMessage(@RequestBody MqMessage message) {
         // 调用服务层方法，将消息发送到延迟队列
         directSourceService.delaySendMessage(message);
-        return Result.ok("发送成功");
+        return ResultBuild.success("发送成功");
     }
 }
