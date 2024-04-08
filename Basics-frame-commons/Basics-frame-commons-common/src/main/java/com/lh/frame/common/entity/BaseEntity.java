@@ -40,9 +40,6 @@ public class BaseEntity implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long updateBy;
 
-    //是否有效
-    @TableField(fill = FieldFill.INSERT)
-    public String dataState;
 
 
 }

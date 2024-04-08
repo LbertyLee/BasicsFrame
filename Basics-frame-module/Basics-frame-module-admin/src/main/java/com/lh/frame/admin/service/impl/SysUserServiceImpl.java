@@ -12,6 +12,7 @@ import com.lh.frame.admin.domain.vo.request.SysUserReq;
 import com.lh.frame.admin.domain.vo.response.SysUserResp;
 import com.lh.frame.admin.entity.SysUser;
 import com.lh.frame.admin.service.SysUserService;
+import com.lh.frame.common.anno.SensitiveResponse;
 import com.lh.frame.common.constant.basic.SystemConstants;
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.exception.SystemException;
@@ -82,6 +83,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     }
 
+    @SensitiveResponse
     @Override
     public SysUserResp getSysUserByUserId(Long id) {
         LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();

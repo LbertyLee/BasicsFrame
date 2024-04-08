@@ -6,6 +6,7 @@ import java.util.Date;
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,9 +25,8 @@ import java.io.Serializable;
 @TableName("frame_sys_user")
 @AllArgsConstructor
 @NoArgsConstructor
-public class SysUser  {
-    //索引
-    private Long id;
+public class SysUser extends BaseEntity {
+
     //用户ID
     @TableId(type = IdType.ASSIGN_ID)
     private Long userId;
@@ -53,23 +53,6 @@ public class SysUser  {
     //最后登录IP
     private String loginIp;
 
-    //创建者
-    @TableField(value = "create_by",fill = FieldFill.INSERT)
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
-    private Long createBy;
-
-    @TableField(fill = FieldFill.INSERT)
-    //创建时间
-    private LocalDateTime createTime;
-
-    //更新者
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
-    private Long updateBy;
-
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    //更新时间
-    private LocalDateTime updateTime;
     //备注
     private String remark;
 
