@@ -5,6 +5,7 @@ import com.lh.frame.common.constant.mq.RabbitConstant;
 import com.lh.frame.rabbitmq.constant.RabbitBasicsConstant;
 import com.lh.frame.rabbitmq.entity.MqMessage;
 import com.lh.frame.rabbitmq.utils.RabbitMqUtil;
+import org.springframework.stereotype.Indexed;
 import org.springframework.stereotype.Service;
 
 
@@ -59,6 +60,11 @@ public class DirectSourceService {
     public void TopicSentMessage(MqMessage message) {
         // 发送主题模式的消息
         rabbitMqUtil.sendTopicMessage(RabbitConstant.TOPIC_NAME, message.getKey(), message.toString());
+    }
+
+    public void delaySendMessage(MqMessage message) {
+        Integer delayTime = 5000;
+        rabbitMqUtil.sendDelayMessage(RabbitConstant.EXCHANGE_NAME,message.getKey(),message.toString(),delayTime);
     }
 }
 

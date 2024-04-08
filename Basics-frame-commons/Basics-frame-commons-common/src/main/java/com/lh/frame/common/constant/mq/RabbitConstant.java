@@ -25,13 +25,9 @@ public class RabbitConstant {
 
 
     /*** ==================文件清理相关===============*/
-    public static final String X_DELAYED_MESSAGE	 = "x-delayed-message";
-
-    /*** 声明一个静态常量DIRECT_EXCHANGE_NAME，它代表了一个直接交换机的名称。*/
-    public static final String FILE_CLEAR_QUEUE = "file_clear";
-
-
-    public static final String FILE_CLEAR_KEY = "basics-key";
+    public static final String FILE_DELAYED_MESSAGE	 = "file_delayed_message";
+    public static final String FILE_CLEAR_QUEUE = "file_queue";
+    public static final String FILE_CLEAR_KEY = "file-key";
 
 
 

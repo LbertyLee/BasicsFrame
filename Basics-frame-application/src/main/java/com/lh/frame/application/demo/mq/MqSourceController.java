@@ -63,4 +63,14 @@ public class MqSourceController {
         directSourceService.TopicSentMessage(message);
         return Result.ok("发送成功");
     }
+
+    /**
+     * 延迟消息发送。
+     */
+    @PostMapping("/delay")
+    public Result delaySendMessage(@RequestBody MqMessage message) {
+        // 调用服务层方法，将消息发送到延迟队列
+        directSourceService.delaySendMessage(message);
+        return Result.ok("发送成功");
+    }
 }

@@ -43,4 +43,14 @@ public class RabbitMqUtil<T> {
         rabbitTemplate.convertAndSend(exchange, routingKey, message);
     }
 
+    /**
+     * 延迟消息
+     */
+    public void sendDelayMessage(String exchange, String routingKey, String dataMessage, Integer delayTime) {
+        rabbitTemplate.convertAndSend(exchange, routingKey, dataMessage, message -> {
+            message.getMessageProperties().setDelay(delayTime); // 设置延迟时间
+            return message;
+        });
+    }
+
 }

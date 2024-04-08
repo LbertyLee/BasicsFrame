@@ -5,49 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/demo/mq/MqSourceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/mq/RabbitConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/constant/RabbitBasicsConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/DirectExchangeSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/ProducerConsumerSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/PublishSubscribeSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/TopicExchangeSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/entity/MqMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/FileSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/package-info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/utils/RabbitMqUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-xxl-job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-xxl-job/src/main/java/com/lh/frame/xxljob/config/XxlJobConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/DirectListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/DirectListener2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/QueueListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/QueueListener2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/SubscribeListener1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/SubscribeListener2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/TopicListener1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/TopicListener2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/service/DirectSourceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-task/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/listener/DelayListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/ErrorCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/ErrorCodeConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/exception/AuthException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/src/main/java/com/lh/frame/task/jok/config/XxlJobConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/src/main/java/com/lh/frame/task/jok/properties/XxlJobProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/jok/ClearFileHandlerJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/demo/mq/MqSourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/demo/mq/MqSourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/mq/RabbitConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/mq/RabbitConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/FileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/FileSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/utils/RabbitMqUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/utils/RabbitMqUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/service/DirectSourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/service/DirectSourceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +142,7 @@
       <workItem from="1712213603765" duration="18069000" />
       <workItem from="1712232915231" duration="5437000" />
       <workItem from="1712292186131" duration="8114000" />
-      <workItem from="1712478688542" duration="19696000" />
+      <workItem from="1712478688542" duration="24738000" />
     </task>
     <servers />
   </component>
