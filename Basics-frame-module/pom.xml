@@ -18,6 +18,7 @@
         <module>Basics-frame-module-oss</module>
         <module>Basics-frame-module-task</module>
         <module>Basics-frame-module-demo</module>
+        <module>Basics-frame-module-subject</module>
     </modules>
 
     <properties>

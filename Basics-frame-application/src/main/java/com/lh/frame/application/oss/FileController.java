@@ -1,6 +1,7 @@
 package com.lh.frame.application.oss;
 
 import com.lh.frame.common.entity.Result;
+import com.lh.frame.common.utils.ResultBuild;
 import com.lh.frame.oss.entity.dto.UploadMultipartFile;
 import com.lh.frame.oss.entity.vo.request.FileReq;
 import com.lh.frame.oss.entity.vo.response.FileResp;
@@ -31,7 +32,7 @@ public class FileController {
      * @return 返回一个结果对象，其中包含上传操作的状态和可能的错误信息。
      */
     @PostMapping("/up-load")
-    public Result upload(@RequestParam("file") MultipartFile file, FileReq fileReq) throws IOException, ServerException, InsufficientDataException, ErrorResponseException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+    public Result<FileResp> upload(@RequestParam("file") MultipartFile file, FileReq fileReq) throws IOException, ServerException, InsufficientDataException, ErrorResponseException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
         //构建文件上传对象
         UploadMultipartFile uploadMultipartFile = UploadMultipartFile
                 .builder()
@@ -39,12 +40,12 @@ public class FileController {
                 .fileByte(IOUtils.toByteArray(file.getInputStream()))
                 .build();
         FileResp fileResp = fileService.upLoad(uploadMultipartFile, fileReq);
-        return Result.ok(fileResp);
+        return ResultBuild.success(fileResp);
     }
 
     @DeleteMapping("/{fileId}")
-    public Result clearFileById(@PathVariable("fileId") String fileId) {
-        return Result.ok(fileService.clearFileById(fileId));
+    public Result<Boolean> clearFileById(@PathVariable("fileId") String fileId) {
+        return ResultBuild.success(fileService.clearFileById(fileId));
     }
 
 

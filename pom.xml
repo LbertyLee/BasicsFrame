@@ -16,6 +16,8 @@
         <module>Basics-frame-module/Basics-frame-module-admin</module>
         <module>Basics-frame-module/Basics-frame-module-auth</module>
         <module>Basics-frame-module/Basics-frame-module-oss</module>
+        <module>Basics-frame-module/Basics-frame-module-subject</module>
+        <module>Basics-frame-module/Basics-frame-module-demo</module>
         <module>Basics-frame-commons</module>
         <module>Basics-frame-commons/Basics-frame-commons-mybatis-plus</module>
         <module>Basics-frame-commons/Basics-frame-commons-common</module>

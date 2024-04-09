@@ -8,5 +8,6 @@ public interface IBaseEnum {
     //信息
     String getMsg();
 
+    //是否成功
     Boolean getSuccess();
 }

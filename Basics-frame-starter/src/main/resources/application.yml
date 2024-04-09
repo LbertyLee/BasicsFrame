@@ -82,8 +82,13 @@ sa-token:
 #  config: classpath:log4j2-spring.xml
 
 mybatis-plus:
+  global-config:
+    db-config:
+      field-strategy: not_empty
+      table-prefix: frame_
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+
 oss:
   minio:
     url:

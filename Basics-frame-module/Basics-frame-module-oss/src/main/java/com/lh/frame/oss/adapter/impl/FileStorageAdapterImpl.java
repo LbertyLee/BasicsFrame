@@ -25,8 +25,11 @@ public class FileStorageAdapterImpl implements FileStorageAdapter {
     @Resource
     RegisterBeanHandler registerBeanHandler;
 
-    private static Map<String,String> fileStorageHandlers =new HashMap<>();
+    private static final Map<String,String> fileStorageHandlers =new HashMap<>();
 
+    /**
+     * 初始化文件存储适配器
+     */
     static {
         fileStorageHandlers.put(FileConstant.MINIO_OSS,"minioOssFileStorageHandler");
         fileStorageHandlers.put(FileConstant.QINIU_KODO,"kodoFileStorageHandler");

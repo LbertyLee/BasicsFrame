@@ -1,5 +1,6 @@
 package com.lh.frame.common.enums;
 
+import com.lh.frame.common.constant.basic.ResultCodeConstant;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -7,8 +8,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum ResultCodeEnum implements IBaseEnum {
 
-    SUCCESS(200, "成功", true),
-    FAIL(500, "失败", false);
+    SUCCESS(ResultCodeConstant.SUCCESS, ResultCodeConstant.SUCCESS_MESSAGE, ResultCodeConstant.SUCCESS_BOOLEAN),
+    FAIL(ResultCodeConstant.FAIL, ResultCodeConstant.FAIL_MESSAGE, ResultCodeConstant.FAIL_BOOLEAN);
 
     public Integer code;
 

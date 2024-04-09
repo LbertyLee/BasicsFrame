@@ -51,13 +51,13 @@ public class SensitiveAspect {
     private String maskSensitiveData(String jsonData) {
         // 替换身份证号码，只显示第一个数字和最后两个数字，中间部分用星号隐藏
         return jsonData
+                // 替换身份证号码
                 .replaceAll("\"identityCard\"\\s*:\\s*\"(\\d{1})(\\d{15})(\\d{2})\"", "\"identityCard\":\"$1**************$3\"")
-                // 替换真实姓名，只显示第一个字符，后面部分用星号隐藏
+                // 替换真实姓名
                 .replaceAll("\"nickName\"\\s*:\\s*\"(.).+?\"", "\"nickName\":\"$1*\"")
-                // 替换银行卡号，只显示第一个字符，后面部分用星号隐藏
+                // 替换银行卡号
                 .replaceAll("\"bankCardNo\"\\s*:\\s*\"(.).+?\"", "\"bankCardNo\":\"$1*\"")
-                // 替换银行名称，只显示第一个字符，后面部分用星号隐藏
-                .replaceAll("\"bankName\"\\s*:\\s*\"(.).+?\"", "\"bankName\":\"$1*\"")
+                // 替换电话号码
                 .replaceAll("\"phonenumber\"\\s*:\\s*\"(\\d{3})(\\d{4})(\\d{4})\"", "\"phonenumber\":\"$1****$3\"");
     }
 
