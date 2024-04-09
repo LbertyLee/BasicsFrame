@@ -992,7 +992,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <table id="296" parent="287" name="frame_subject_collect">
-      <Comment>题目信息表</Comment>
+      <Comment>题目收藏表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
@@ -1012,7 +1012,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <table id="300" parent="287" name="frame_subject_liked">
-      <Comment>题目信息表</Comment>
+      <Comment>题目点赞表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
@@ -1311,7 +1311,7 @@ DYNAMIC</Options>
     </column>
     <column id="356" parent="295" name="category_name">
       <Comment>分类名称</Comment>
-      <DasType>varchar(16)|0s</DasType>
+      <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="357" parent="295" name="category_type">
@@ -1321,7 +1321,7 @@ DYNAMIC</Options>
     </column>
     <column id="358" parent="295" name="image_url">
       <Comment>图标连接</Comment>
-      <DasType>varchar(64)|0s</DasType>
+      <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="359" parent="295" name="parent_id">
@@ -1331,7 +1331,7 @@ DYNAMIC</Options>
     </column>
     <column id="360" parent="295" name="created_by">
       <Comment>创建人</Comment>
-      <DasType>varchar(32)|0s</DasType>
+      <DasType>varchar(64)|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="361" parent="295" name="created_time">
@@ -1341,7 +1341,7 @@ DYNAMIC</Options>
     </column>
     <column id="362" parent="295" name="update_by">
       <Comment>更新人</Comment>
-      <DasType>varchar(32)|0s</DasType>
+      <DasType>varchar(64)|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="363" parent="295" name="update_time">
@@ -1955,7 +1955,7 @@ DYNAMIC</Options>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="479" parent="305" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>102</AutoIncrement>
       <Comment>索引</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>

@@ -1,5 +1,7 @@
 package com.lh.frame.subject.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -20,6 +22,10 @@ import lombok.experimental.Accessors;
 @TableName("frame_subject_label")
 public class SubjectLabel extends BaseEntity {
 
+
+    //标签id
+    @TableId(type = IdType.ASSIGN_ID)
+    private Long labelId;
     //标签分类
     private String labelName;
     //排序

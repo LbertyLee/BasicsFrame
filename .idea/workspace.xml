@@ -5,69 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/ResultCodeConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectBriefDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCollectDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectJudgeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLabelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLikedDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMappingDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMultipleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectRadioDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectBrief.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCollect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectJudge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLiked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectMultiple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectRadio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectBriefService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCollectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectJudgeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLikedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMappingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMultipleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectRadioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectBriefServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCollectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectJudgeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLikedServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMappingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMultipleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectRadioServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectBriefDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCategoryDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCollectDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectInfoDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectJudgeDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLabelDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLikedDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMappingDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMultipleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectRadioDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectLabelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/BeanConv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/ExceptionsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/constant/SubjectConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectCategoryEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectLabelEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectCategoryReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectLabelReq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/oss/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/oss/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/aspect/SensitiveAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/aspect/SensitiveAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/ErrorCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/ErrorCodeConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/enums/IBaseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/enums/IBaseEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/enums/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/enums/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/impl/FileStorageAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-oss/src/main/java/com/lh/frame/oss/adapter/impl/FileStorageAdapterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLabelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLabelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLabelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLabelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectBriefDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectBriefDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCollectDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectCollectDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectJudgeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectJudgeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLabelDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLabelDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLikedDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectLikedDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMappingDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMappingDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMultipleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectMultipleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectRadioDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/resources/mapper/SubjectRadioDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +49,8 @@
         <option value="package.json" />
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -133,7 +102,7 @@
     "project.structure.proportion": "0.23558164",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.sjhy.plugin.ui.MainSettingForm",
-    "spring.configuration.checksum": "b1a0817d04ffccc95b49044fbe60baee",
+    "spring.configuration.checksum": "6dabf2bc2a48250d0e204a65b078b83e",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -157,11 +126,11 @@
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lh.frame.common.utils" />
+      <recent name="com.lh.frame.application.subject" />
       <recent name="mapper" />
       <recent name="com.lh.frame.common.aspect" />
       <recent name="com.lh.frame.common.anno" />
-      <recent name="com.lh.frame.redis.resolver" />
-      <recent name="com.lh.frame.redis.config" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BasicsFrameApplication">
@@ -214,6 +183,8 @@
       <workItem from="1712232915231" duration="5437000" />
       <workItem from="1712292186131" duration="8114000" />
       <workItem from="1712478688542" duration="29004000" />
+      <workItem from="1712660294710" duration="3522000" />
+      <workItem from="1712663862184" duration="6264000" />
     </task>
     <servers />
   </component>
