@@ -1,7 +1,7 @@
 package com.lh.frame.subject.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lh.frame.subject.entity.SubjectLabel;
+import com.lh.frame.subject.domain.vo.entity.SubjectLabel;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -16,20 +16,14 @@ import java.util.List;
 @Data
 public class PageResult<T> implements Serializable {
 
-    private Integer pageNo = 1;
+    private Long pageNo = 1L;
 
-    private Integer pageSize = 20;
+    private Long pageSize = 20L;
 
-    private Integer total = 0;
+    private Long total = 0L;
 
-    private Integer totalPages = 0;
+    private Long totalPages = 0L;
 
     private List<T> result = Collections.emptyList();
 
-    public void setRecords(List<T> result) {
-        this.result = result;
-        if (result != null && result.size() > 0) {
-            setTotal(result.size());
-        }
-    }
 }

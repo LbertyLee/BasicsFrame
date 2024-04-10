@@ -1,4 +1,4 @@
-package com.lh.frame.subject.entity;
+package com.lh.frame.subject.domain.vo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -33,7 +33,7 @@ public class SubjectLabel extends BaseEntity {
     //分类id
     private String categoryId;
 
-    private Integer isDeleted;
+    private Long isDeleted;
 
 }
 

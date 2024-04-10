@@ -1,7 +1,8 @@
 package com.lh.frame.subject.convert;
 
 import com.lh.frame.subject.domain.vo.request.SubjectLabelReq;
-import com.lh.frame.subject.entity.SubjectLabel;
+import com.lh.frame.subject.domain.vo.entity.SubjectLabel;
+import com.lh.frame.subject.domain.vo.response.SubjectLabelResp;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -15,6 +16,6 @@ public interface SubjectLabelEntityConverter {
 
     SubjectLabelReq convertEntityToReq(SubjectLabel subjectLabel);
 
-    List<SubjectLabelReq> convertEntityListToReqList(List<SubjectLabel> subjectLabelList);
+    List<SubjectLabelResp> convertEntityListToRespList(List<SubjectLabel> subjectLabelList);
 
 }

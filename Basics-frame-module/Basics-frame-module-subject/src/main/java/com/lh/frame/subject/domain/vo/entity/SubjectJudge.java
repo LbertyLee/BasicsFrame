@@ -1,4 +1,4 @@
-package com.lh.frame.subject.entity;
+package com.lh.frame.subject.domain.vo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -8,27 +8,25 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
- * 题目分类关系表(FrameSubjectMapping)表实体类
+ * 判断题(FrameSubjectJudge)表实体类
  *
  * @author LbertyLee
- * @since 2024-04-09 17:05:32
+ * @since 2024-04-09 17:08:12
  */
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-@TableName("frame_subject_mapping")
-public class SubjectMapping extends BaseEntity {
+@TableName("frame_subject_judge")
+public class SubjectJudge extends BaseEntity {
 
     //题目id
     private Long subjectId;
 
-    //分类id
-    private Long categoryId;
+    //是否正确
+    private Integer isCorrect;
 
-    //标签id
-    private Long labelId;
 
     private Integer isDeleted;
 

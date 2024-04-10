@@ -1,4 +1,4 @@
-package com.lh.frame.subject.entity;
+package com.lh.frame.subject.domain.vo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -8,24 +8,26 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
- * 判断题(FrameSubjectJudge)表实体类
+ * 题目信息表(FrameSubjectLiked)表实体类
  *
  * @author LbertyLee
- * @since 2024-04-09 17:08:12
+ * @since 2024-04-09 17:05:12
  */
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-@TableName("frame_subject_judge")
-public class SubjectJudge extends BaseEntity {
+@TableName("frame_subject_liked")
+public class SubjectLiked extends BaseEntity {
 
     //题目id
     private Long subjectId;
 
-    //是否正确
-    private Integer isCorrect;
+    //点赞人id
+    private String likeUserId;
+
+    //点赞状态 1点赞 0不点赞
+    private Integer status;
 
 
     private Integer isDeleted;

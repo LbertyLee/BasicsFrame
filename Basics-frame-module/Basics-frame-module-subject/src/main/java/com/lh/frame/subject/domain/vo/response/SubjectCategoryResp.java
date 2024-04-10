@@ -1,14 +1,12 @@
-package com.lh.frame.subject.domain.vo.request;
+package com.lh.frame.subject.domain.vo.response;
 
-import com.lh.frame.subject.domain.vo.response.SubjectLabelResp;
+import com.lh.frame.subject.domain.vo.request.SubjectLabelReq;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 @Data
-public class SubjectCategoryReq {
-
+public class SubjectCategoryResp {
     //id
     private Long id;
 
@@ -30,5 +28,5 @@ public class SubjectCategoryReq {
     //是否删除 0: 未删除 1: 已删除
     private Long isDeleted;
 
-
+    private List<SubjectLabelResp> subjectLabelRespList;
 }

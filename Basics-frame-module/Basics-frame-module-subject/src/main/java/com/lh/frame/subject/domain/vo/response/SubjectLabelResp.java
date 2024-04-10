@@ -1,10 +1,10 @@
-package com.lh.frame.subject.domain.vo.request;
+package com.lh.frame.subject.domain.vo.response;
 
-import com.lh.frame.common.entity.PageInfo;
 import lombok.Data;
 
 @Data
-public class SubjectLabelReq extends PageInfo {
+public class SubjectLabelResp {
+
 
     //标签id
     private String labelId;

@@ -139,9 +139,9 @@ public class SysUserServiceImpl implements SysUserService {
         //封装分页结果
         PageResult<SysUserResp> pageResult = new PageResult<>();
         pageResult.setResult(sysUserRespList);
-        pageResult.setTotal((int) selectPage.getTotal());
-        pageResult.setPageSize((int) selectPage.getSize());
-        pageResult.setTotalPages((int) selectPage.getPages());
+        pageResult.setTotal(selectPage.getTotal());
+        pageResult.setPageSize( selectPage.getSize());
+        pageResult.setTotalPages( selectPage.getPages());
         return pageResult;
 
     }
