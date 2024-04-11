@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

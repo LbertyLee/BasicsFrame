@@ -1,9 +1,10 @@
 package com.lh.frame.subject.domain.vo.response;
 
+import com.lh.frame.common.entity.BaseEntity;
 import lombok.Data;
 
 @Data
-public class SubjectLabelResp {
+public class SubjectLabelResp extends BaseEntity {
 
 
     //标签id

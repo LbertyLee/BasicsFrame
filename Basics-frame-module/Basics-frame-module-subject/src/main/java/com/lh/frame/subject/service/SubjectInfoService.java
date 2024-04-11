@@ -1,5 +1,7 @@
 package com.lh.frame.subject.service;
 
+import com.lh.frame.subject.domain.vo.request.SubjectInfoReq;
+
 /**
  * 题目信息表(FrameSubjectInfo)表服务接口
  *
@@ -8,5 +10,6 @@ package com.lh.frame.subject.service;
  */
 public interface SubjectInfoService  {
 
+    void addSubjectInfo(SubjectInfoReq subjectInfoReq);
 }
 

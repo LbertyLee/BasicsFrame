@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -21,7 +21,7 @@ import lombok.experimental.Accessors;
 public class SubjectBrief extends BaseEntity {
 
     //题目id
-    private Integer subjectId;
+    private Long subjectId;
 
     //题目答案
     private String subjectAnswer;

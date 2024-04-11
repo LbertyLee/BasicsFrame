@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -28,7 +28,7 @@ public class SubjectJudge extends BaseEntity {
     private Integer isCorrect;
 
 
-    private Integer isDeleted;
+    private Long isDeleted;
 
 
 }

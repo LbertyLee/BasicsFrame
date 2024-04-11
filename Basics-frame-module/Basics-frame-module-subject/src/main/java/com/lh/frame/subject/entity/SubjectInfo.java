@@ -1,5 +1,7 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -20,6 +22,9 @@ import lombok.experimental.Accessors;
 @TableName("frame_subject_info")
 public class SubjectInfo extends BaseEntity {
 
+
+    @TableId(type = IdType.ASSIGN_ID)
+    private Long subjectId;
     //题目名称
     private String subjectName;
 

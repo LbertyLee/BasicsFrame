@@ -1,12 +1,13 @@
 package com.lh.frame.subject.domain.vo.response;
 
+import com.lh.frame.common.entity.BaseEntity;
 import com.lh.frame.subject.domain.vo.request.SubjectLabelReq;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class SubjectCategoryResp {
+public class SubjectCategoryResp extends BaseEntity {
     //id
     private Long id;
 

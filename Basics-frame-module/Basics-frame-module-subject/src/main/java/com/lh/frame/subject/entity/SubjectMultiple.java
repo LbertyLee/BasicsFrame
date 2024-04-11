@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 
 
@@ -26,12 +26,16 @@ public class SubjectMultiple extends BaseEntity {
 
     //题目id
     private Long subjectId;
+
     //选项类型
-    private Long optionType;
+    private String optionType;
+
     //选项内容
     private String optionContent;
+
     //是否正确
     private Integer isCorrect;
+
 
     private Integer isDeleted;
 

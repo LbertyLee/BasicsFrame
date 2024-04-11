@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -8,27 +8,27 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
- * 题目信息表(FrameSubjectLiked)表实体类
+ * 题目分类关系表(FrameSubjectMapping)表实体类
  *
  * @author LbertyLee
- * @since 2024-04-09 17:05:12
+ * @since 2024-04-09 17:05:32
  */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-@TableName("frame_subject_liked")
-public class SubjectLiked extends BaseEntity {
+@TableName("frame_subject_mapping")
+public class SubjectMapping extends BaseEntity {
 
     //题目id
     private Long subjectId;
 
-    //点赞人id
-    private String likeUserId;
+    //分类id
+    private Long categoryId;
 
-    //点赞状态 1点赞 0不点赞
-    private Integer status;
-
+    //标签id
+    private Long labelId;
 
     private Integer isDeleted;
 

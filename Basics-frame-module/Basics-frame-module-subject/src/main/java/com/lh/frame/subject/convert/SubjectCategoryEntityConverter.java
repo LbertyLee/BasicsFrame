@@ -1,7 +1,7 @@
 package com.lh.frame.subject.convert;
 
 import com.lh.frame.subject.domain.vo.request.SubjectCategoryReq;
-import com.lh.frame.subject.domain.vo.entity.SubjectCategory;
+import com.lh.frame.subject.entity.SubjectCategory;
 import com.lh.frame.subject.domain.vo.response.SubjectCategoryResp;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

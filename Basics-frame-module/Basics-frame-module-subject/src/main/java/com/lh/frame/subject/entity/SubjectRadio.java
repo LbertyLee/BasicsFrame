@@ -1,4 +1,4 @@
-package com.lh.frame.subject.domain.vo.entity;
+package com.lh.frame.subject.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
@@ -24,7 +24,7 @@ public class SubjectRadio extends BaseEntity {
     private Long subjectId;
 
     //a,b,c,d
-    private Integer optionType;
+    private String optionType;
 
     //选项内容
     private String optionContent;
