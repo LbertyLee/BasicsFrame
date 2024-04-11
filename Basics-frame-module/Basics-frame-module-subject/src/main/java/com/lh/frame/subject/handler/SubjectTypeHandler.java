@@ -1,6 +1,8 @@
 package com.lh.frame.subject.handler;
 
 
+import com.lh.frame.subject.domain.dto.SubjectAnswerDTO;
+import com.lh.frame.subject.domain.dto.SubjectOptionDTO;
 import com.lh.frame.subject.domain.vo.request.SubjectInfoReq;
 import com.lh.frame.subject.domain.vo.response.SubjectInfoResp;
 import com.lh.frame.subject.enums.SubjectInfoTypeEnum;
@@ -20,6 +22,6 @@ public interface SubjectTypeHandler {
     /**
      * 实际的题目的查询
      */
-    SubjectInfoResp query(Long subjectId);
+    SubjectOptionDTO query(Long subjectId);
 
 }

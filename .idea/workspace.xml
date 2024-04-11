@@ -5,56 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectInfoEntityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/dto/SubjectAnswerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectInfoReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectInfoResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/enums/SubjectInfoTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/BriefTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/JudgeTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/MultipleTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/RadioTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/SubjectTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/SubjectTypeHandlerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectJudgeEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectMappingEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectMultipleEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectRadioEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/dto/SubjectMappingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/dto/SubjectOptionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/es/SubjectEsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/utils/SecurityUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectCategoryEntityConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectCategoryEntityConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectLabelEntityConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectLabelEntityConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectBriefDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectBriefDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCollectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectCollectDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectJudgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectJudgeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLabelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLabelDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLikedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectLikedDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMappingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMappingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMultipleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectMultipleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectRadioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/dao/SubjectRadioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectBrief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectCollect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectJudge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectLiked.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLiked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/entity/SubjectRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectRadio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectCategoryResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectCategoryResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectLabelResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectLabelResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/entity/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectInfoEntityConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectInfoEntityConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectInfoReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectInfoReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectInfoResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectInfoResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectBrief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectRadio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/BriefTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/BriefTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/JudgeTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/JudgeTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/MultipleTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/MultipleTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/RadioTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/RadioTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/SubjectTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/handler/SubjectTypeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectBriefService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectBriefService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectJudgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectJudgeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLabelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLabelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMappingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMappingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMultipleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectMultipleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectRadioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectRadioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectBriefServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectBriefServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectJudgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectJudgeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLabelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLabelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMappingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMappingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMultipleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectMultipleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectRadioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectRadioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +55,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -98,37 +88,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/programming/java/javaproject/BasicsFrame/Basics-frame-module/Basics-frame-module-blog/src/main/java/com/lh/frame/blog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.23558164&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.sjhy.plugin.ui.MainSettingForm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6dabf2bc2a48250d0e204a65b078b83e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-module/Basics-frame-module-blog/src/main/java/com/lh/frame/blog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.23558164",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.MainSettingForm",
+    "spring.configuration.checksum": "ed257873fe6def2eee27568a1b75686f",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -205,7 +195,8 @@
       <workItem from="1712663862184" duration="6264000" />
       <workItem from="1712734877778" duration="640000" />
       <workItem from="1712736643755" duration="11668000" />
-      <workItem from="1712807473501" duration="11101000" />
+      <workItem from="1712807473501" duration="17539000" />
+      <workItem from="1712827803287" duration="13874000" />
     </task>
     <servers />
   </component>

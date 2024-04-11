@@ -13,5 +13,6 @@ import java.util.List;
  */
 public interface SubjectRadioService extends IService<SubjectRadio> {
 
+    List<SubjectRadio> queryBySubjectId(Long subjectId);
 }
 

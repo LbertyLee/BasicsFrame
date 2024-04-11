@@ -128,5 +128,14 @@ public class SubjectLabelServiceImpl  implements SubjectLabelService {
         return pageResult;
     }
 
+    @Override
+    public List<SubjectLabel> queryList(List<Long> labelIdList) {
+        if (labelIdList != null && labelIdList.size() > 0){
+            return subjectLabelDao.selectList(new LambdaQueryWrapper<SubjectLabel>().in(SubjectLabel::getLabelId, labelIdList));
+        }
+
+        return null;
+    }
+
 }
 

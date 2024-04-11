@@ -3,6 +3,8 @@ package com.lh.frame.subject.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lh.frame.subject.entity.SubjectJudge;
 
+import java.util.List;
+
 /**
  * 判断题(FrameSubjectJudge)表服务接口
  *
@@ -12,5 +14,6 @@ import com.lh.frame.subject.entity.SubjectJudge;
 public interface SubjectJudgeService extends IService<SubjectJudge> {
 
 
+    List<SubjectJudge> queryBySubjectId(Long subjectId);
 }
 

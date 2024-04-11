@@ -2,6 +2,7 @@ package com.lh.frame.common.entity;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Collections;
@@ -14,6 +15,7 @@ import java.util.List;
  * @date: 2023/10/5
  */
 @Data
+@Accessors(chain = true)
 public class PageResult<T> implements Serializable {
 
     private Long pageNo = 1L;

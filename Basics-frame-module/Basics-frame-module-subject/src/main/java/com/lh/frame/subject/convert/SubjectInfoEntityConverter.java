@@ -18,5 +18,5 @@ public interface SubjectInfoEntityConverter {
 
     SubjectInfoResp convertEntityToResp(SubjectInfo subjectInfo);
 
-    List<SubjectInfoReq> convertEntityToReqList(List<SubjectInfo> subjectInfoList);
+    List<SubjectInfoResp> convertEntityToRespList(List<SubjectInfo> subjectInfoList);
 }

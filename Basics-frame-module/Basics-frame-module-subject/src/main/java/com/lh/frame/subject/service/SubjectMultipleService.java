@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface SubjectMultipleService extends IService<SubjectMultiple>{
 
+    List<SubjectMultiple> queryBySubjectId(Long subjectId);
 }

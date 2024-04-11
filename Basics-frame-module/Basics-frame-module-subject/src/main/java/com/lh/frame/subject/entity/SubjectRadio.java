@@ -1,5 +1,6 @@
 package com.lh.frame.subject.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ import lombok.experimental.Accessors;
 public class SubjectRadio extends BaseEntity {
 
     //题目id
+   @TableId
     private Long subjectId;
 
     //a,b,c,d

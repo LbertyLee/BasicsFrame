@@ -10,6 +10,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/pom.xml" />
         <option value="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-task-job/pom.xml" />
         <option value="$PROJECT_DIR$/Basics-frame-module/Basics-frame-common-mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-task-job/pom.xml" />

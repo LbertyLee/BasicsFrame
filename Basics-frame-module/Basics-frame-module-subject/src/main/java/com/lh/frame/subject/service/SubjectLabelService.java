@@ -3,6 +3,7 @@ package com.lh.frame.subject.service;
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.subject.domain.vo.request.SubjectLabelReq;
 import com.lh.frame.subject.domain.vo.response.SubjectLabelResp;
+import com.lh.frame.subject.entity.SubjectLabel;
 
 import java.util.List;
 
@@ -56,5 +57,12 @@ public interface SubjectLabelService  {
      */
     PageResult<SubjectLabelResp> page(SubjectLabelReq subjectLabelReq);
 
+    /**
+     * 查询指定标签ID列表对应的标签信息列表。
+     *
+     * @param labelIdList 标签ID的列表，用于指定要查询的标签。列表中的每个ID代表一个标签。
+     * @return 返回一个SubjectLabel类型的列表，每个元素包含了对应标签的详细信息。
+     */
+    List<SubjectLabel> queryList(List<Long> labelIdList);
 }
 

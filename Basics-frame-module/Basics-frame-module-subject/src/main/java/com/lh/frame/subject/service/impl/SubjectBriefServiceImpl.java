@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lh.frame.subject.dao.SubjectBriefDao;
 import com.lh.frame.subject.dao.SubjectMultipleDao;
 import com.lh.frame.subject.entity.SubjectBrief;
+import com.lh.frame.subject.entity.SubjectInfo;
 import com.lh.frame.subject.entity.SubjectMultiple;
 import com.lh.frame.subject.service.SubjectBriefService;
 import org.springframework.stereotype.Service;
@@ -21,5 +22,11 @@ import java.util.List;
 @Service
 public class SubjectBriefServiceImpl  extends ServiceImpl<SubjectBriefDao, SubjectBrief> implements SubjectBriefService {
 
+    @Resource
+    private SubjectBriefDao subjectBriefDao;
+    @Override
+    public SubjectBrief queryBySubjectId(Long subjectId) {
+       return subjectBriefDao.selectById(subjectId);
+    }
 }
 

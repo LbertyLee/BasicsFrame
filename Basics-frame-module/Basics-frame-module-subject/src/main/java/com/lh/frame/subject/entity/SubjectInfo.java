@@ -25,6 +25,7 @@ public class SubjectInfo extends BaseEntity {
 
     @TableId(type = IdType.ASSIGN_ID)
     private Long subjectId;
+
     //题目名称
     private String subjectName;
 
