@@ -1,11 +1,17 @@
 package com.lh.frame.subject.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.lh.frame.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDateTime;
 
 /**
  * 题目信息表(FrameSubjectLiked)表实体类
@@ -18,7 +24,7 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 @TableName("frame_subject_liked")
-public class SubjectLiked extends BaseEntity {
+public class SubjectLiked  {
 
     //题目id
     private Long subjectId;
@@ -31,6 +37,9 @@ public class SubjectLiked extends BaseEntity {
 
 
     private Integer isDeleted;
+
+
+
 
 
 }

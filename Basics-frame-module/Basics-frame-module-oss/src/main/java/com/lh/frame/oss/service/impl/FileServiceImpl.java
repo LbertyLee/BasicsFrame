@@ -118,6 +118,23 @@ public class FileServiceImpl implements FileService {
         return null;
     }
 
+    @Override
+    public void syncFile() {
+        LocalDateTime localDateTime =  LocalDateTime.now().minusSeconds(fileDelayTime/1000);
+        LambdaQueryWrapper<File> lambdaQueryWrapper = new LambdaQueryWrapper<File>()
+                .isNull(File::getBusinessId).eq(File::getCreateTime,localDateTime);
+        File file = this.fileDao.selectOne(lambdaQueryWrapper);
+        if(!EmptyUtil.isNullOrEmpty(file)){
+            //执行删除逻辑
+            int i = this.fileDao.deleteById(file);
+            //删除对象存储中的文件
+            if(i<0){
+                throw new FileException("删除文件失败");
+            }
+            fileStorageAdapter.delete(file.getStoreFlag(),file.getBucketName(),file.getFileName());
+        }
+    }
+
 
 }
 

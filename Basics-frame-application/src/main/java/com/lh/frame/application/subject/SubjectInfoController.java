@@ -9,7 +9,6 @@ import com.lh.frame.subject.service.SubjectInfoService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @RestController
 @RequestMapping("/subject/info")

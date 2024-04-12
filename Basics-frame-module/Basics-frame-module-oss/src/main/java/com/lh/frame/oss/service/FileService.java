@@ -34,4 +34,6 @@ public interface FileService {
      * @return
      */
     Boolean PeriodicallyClearFile();
+
+    void syncFile();
 }

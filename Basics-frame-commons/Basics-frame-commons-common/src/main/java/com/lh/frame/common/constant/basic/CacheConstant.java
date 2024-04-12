@@ -12,5 +12,7 @@ public class CacheConstant {
     //默认redis自动释放时间
     public static final int REDIS_LEASETIME = 4;
 
+    private static final String CACHE_KEY_SEPARATOR = ".";
+
 
 }
