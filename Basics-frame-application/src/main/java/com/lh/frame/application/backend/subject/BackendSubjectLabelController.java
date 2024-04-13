@@ -1,4 +1,4 @@
-package com.lh.frame.application.subject;
+package com.lh.frame.application.backend.subject;
 
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.entity.Result;
@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 @Slf4j
 @RestController
 @RequestMapping("/subject/label")
-public class SubjectLabelController {
+public class BackendSubjectLabelController {
 
     @Resource
     private SubjectLabelService subjectLabelService;
@@ -36,13 +36,12 @@ public class SubjectLabelController {
         // 返回添加成功的消息
         return ResultBuild.success("添加标签成功");
     }
+
     @PostMapping("/page")
     public PageResult<SubjectLabelResp> page(@RequestBody SubjectLabelReq subjectLabelReq) {
         log.info("SubjectLabelController.page.subjectLabelReq:{}", subjectLabelReq);
         return subjectLabelService.page(subjectLabelReq);
     }
-
-
 
     /**
      * 删除标签

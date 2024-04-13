@@ -1,4 +1,4 @@
-package com.lh.frame.application.subject;
+package com.lh.frame.application.backend.subject;
 
 import com.lh.frame.common.entity.Result;
 import com.lh.frame.common.utils.ResultBuild;
@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/subject/liked")
-public class SubjectLikedController {
+public class BackendSubjectLikedController {
 
     @Resource
     private SubjectLikedService subjectLikedService;
@@ -37,9 +37,4 @@ public class SubjectLikedController {
         return ResultBuild.success(subjectLikedService.querySubjectLikedPage(subjectLikedReq));
     }
 
-    @GetMapping("/test")
-    public Result<String> test() {
-        subjectLikedService.syncLiked();
-        return ResultBuild.success();
-    }
 }

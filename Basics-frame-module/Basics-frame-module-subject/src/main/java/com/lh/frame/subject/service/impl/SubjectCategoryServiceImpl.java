@@ -193,6 +193,49 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
         }
     }
 
+    /**
+     * 查询主题分类树结构。
+     * 该方法首先从数据库中查询所有未被删除的主题分类，然后将这些分类转换为对应的响应对象列表。
+     * 接着，通过遍历响应对象列表，为每个根节点收集其子节点信息，最终返回一个树状结构的响应对象列表。
+     *
+     * @return List<SubjectCategoryResp> 返回主题分类的树状结构响应对象列表。
+     */
+    @Override
+    public List<SubjectCategoryResp> queryTree() {
+        // 从数据库中查询未被删除的主题分类
+        List<SubjectCategory> subjectCategories = subjectCategoryDao.selectList(new LambdaQueryWrapper<SubjectCategory>()
+                .eq(SubjectCategory::getIsDeleted, SystemConstants.NO_DELETE)
+        );
+
+        // 将主题分类实体列表转换为响应对象列表
+        List<SubjectCategoryResp> subjectCategoryRespList =
+                SubjectCategoryEntityConverter.INSTANCE.convertEntityListToRespList(subjectCategories);
+        // 为每个根节点收集并设置子节点信息
+        List<SubjectCategoryResp> subjectCategoryRespTree = subjectCategoryRespList.stream()
+                .filter(subjectCategoryResp -> subjectCategoryResp.getParentId() == 0).collect(Collectors.toList());
+        subjectCategoryRespTree.forEach
+                (subjectCategoryResp -> subjectCategoryResp.setChildList(this.getChildList(subjectCategoryResp, subjectCategoryRespList)));
+        return subjectCategoryRespTree;
+    }
+
+    /**
+     * 获取指定父节点的子节点列表。
+     * 该方法通过遍历所有响应对象，筛选出父节点ID匹配指定ID的子节点，并收集到一个列表中返回。
+     *
+     * @param subjectCategoryResp 父节点的响应对象
+     * @param subjectCategoryRespList 所有响应对象的列表
+     * @return List<SubjectCategoryResp> 返回指定父节点的子节点列表。
+     */
+    private List<SubjectCategoryResp> getChildList(SubjectCategoryResp subjectCategoryResp, List<SubjectCategoryResp> subjectCategoryRespList) {
+       if (subjectCategoryRespList.isEmpty()){
+           return new ArrayList<>();
+       }
+        // 筛选出父节点ID匹配指定ID的子节点并收集到一个列表中
+        return subjectCategoryRespList.stream()
+                .filter(categoryResp -> categoryResp.getParentId().equals(subjectCategoryResp.getCategoryId()))
+                .collect(Collectors.toList());
+    }
+
 
 
     /**

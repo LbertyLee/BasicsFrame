@@ -30,4 +30,6 @@ public class SubjectCategoryResp extends BaseEntity {
     private Long isDeleted;
 
     private List<SubjectLabelResp> subjectLabelRespList;
+
+    private List<SubjectCategoryResp> childList;
 }

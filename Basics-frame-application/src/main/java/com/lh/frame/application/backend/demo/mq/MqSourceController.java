@@ -1,4 +1,4 @@
-package com.lh.frame.application.demo.mq;
+package com.lh.frame.application.backend.demo.mq;
 
 import com.lh.frame.common.entity.Result;
 import com.lh.frame.common.utils.ResultBuild;

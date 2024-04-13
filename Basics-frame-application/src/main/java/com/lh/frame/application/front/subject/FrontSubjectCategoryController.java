@@ -1,8 +1,7 @@
-package com.lh.frame.application.subject;
+package com.lh.frame.application.front.subject;
 
 import com.lh.frame.common.entity.Result;
 import com.lh.frame.common.utils.ResultBuild;
-import com.lh.frame.subject.domain.vo.request.SubjectCategoryReq;
 import com.lh.frame.subject.domain.vo.response.SubjectCategoryResp;
 import com.lh.frame.subject.service.SubjectCategoryService;
 import lombok.extern.slf4j.Slf4j;
@@ -14,24 +13,12 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/subject/category")
-public class SubjectCategoryController {
+@RequestMapping("/front/subject/category")
+public class FrontSubjectCategoryController {
 
 
     @Resource
     private SubjectCategoryService subjectCategoryService;
-
-    /**
-     * 添加题目分类
-     *
-     * @param subjectCategoryReq 包含题目分类信息的请求体
-     */
-    @PostMapping("/add")
-    public Result<String> addCategory(@RequestBody @Validated  SubjectCategoryReq subjectCategoryReq){
-        log.info("SubjectCategoryController.addCategory.subjectCategoryReq:{}",subjectCategoryReq);
-        subjectCategoryService.addCategory(subjectCategoryReq);
-        return ResultBuild.success("添加题目分类成功");
-    }
 
 
     /**
@@ -48,7 +35,6 @@ public class SubjectCategoryController {
 
 
 
-
     /**
      * 查询父级主题分类
      * 本接口不需要接收任何参数，调用后会返回一个包含所有父级主题分类的列表。
@@ -61,26 +47,7 @@ public class SubjectCategoryController {
         return ResultBuild.success(subjectCategoryService.queryParent());
     }
 
-    /**
-     * 删除指定的题目分类
-     * @param categoryId 分类ID，通过URL路径变量传递
-     */
-    @DeleteMapping("/delete/{categoryId}")
-    public Result<String> deleteCategory( @PathVariable  @Validated Long categoryId){
-        // 记录日志，打印删除操作的类别ID
-        log.info("SubjectCategoryController.deleteCategory.categoryId:{}",categoryId);
-        // 调用服务层方法，执行删除操作
-        subjectCategoryService.deleteCategory(categoryId);
-        // 返回成功结果，包含删除成功的消息
-        return ResultBuild.success("删除题目分类成功");
-    }
 
-    @PutMapping("/update")
-    public Result<String> updateCategory(@RequestBody  @Validated SubjectCategoryReq subjectCategoryReq){
-        log.info("SubjectCategoryController.updateCategory.subjectCategoryReq:{}",subjectCategoryReq);
-        subjectCategoryService.updateCategory(subjectCategoryReq);
-        return ResultBuild.success("更新题目分类成功");
-    }
 
 
 

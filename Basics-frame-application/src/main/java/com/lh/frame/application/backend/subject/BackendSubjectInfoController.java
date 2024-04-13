@@ -1,4 +1,4 @@
-package com.lh.frame.application.subject;
+package com.lh.frame.application.backend.subject;
 
 import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.entity.Result;
@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/subject/info")
-public class SubjectInfoController {
+public class BackendSubjectInfoController {
 
     @Resource
     private SubjectInfoService subjectInfoService;

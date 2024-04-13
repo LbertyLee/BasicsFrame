@@ -62,5 +62,12 @@ public interface SubjectCategoryService {
     void updateCategory(SubjectCategoryReq subjectCategoryReq);
 
 
+    /**
+     * 查询主题分类树状结构
+     *
+     * @return 返回主题分类的树状结构列表。每个主题分类包含其相关信息。
+     */
+    List<SubjectCategoryResp> queryTree();
+
 }
 

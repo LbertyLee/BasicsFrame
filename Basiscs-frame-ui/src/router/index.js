@@ -54,6 +54,30 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/club',
+    component: Layout,
+    redirect: '/club',
+    name: '刷题管理',
+    meta: {
+      title: '刷题管理',
+      icon: 'el-icon-message-solid'
+    },
+    children: [
+      {
+        path: 'subject',
+        component: () => import('@/views/club/subject/index'), 
+        name: '题目管理',
+        meta: { title: '题目管理',icon: 'user' },
+      },
+      {
+        path: 'category',
+        component: () => import('@/views/club/category/index'),
+        name: '分类管理',
+        meta: { title: '分类管理',icon:'el-icon-tickets' }
+      }
+    ]
+  },
 
   {
     path: '/user',

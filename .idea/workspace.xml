@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectLikedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-redis/src/main/java/com/lh/frame/redis/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/constant/SubjectLikedConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/convert/SubjectLikedEntityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/request/SubjectLikedReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectLikedResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/enums/SubjectLikedStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-task/src/main/java/com/lh/frame/task/job/SyncLikedJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/admin/controller/BackendSysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/front/subject/FrontSubjectCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/constant/SubjectCategoryConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/java/com/lh/frame/common/constant/basic/CacheConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-redis/src/main/java/com/lh/frame/redis/config/RedisCacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-redis/src/main/java/com/lh/frame/redis/config/RedisCacheConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLiked.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/entity/SubjectLiked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLikedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectLikedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLikedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectLikedServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-task/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/admin/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/front/admin/FrontSysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/demo/mq/MqSourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/demo/mq/MqSourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/subject/BackendSubjectCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/subject/BackendSubjectInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectLabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/subject/BackendSubjectLabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/subject/SubjectLikedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/subject/BackendSubjectLikedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectCategoryResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/domain/vo/response/SubjectCategoryResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/SubjectCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-subject/src/main/java/com/lh/frame/subject/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/file/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/file/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/views/system/user/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,37 +67,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-module/Basics-frame-module-blog/src/main/java/com/lh/frame/blog",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.23558164",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.MainSettingForm",
-    "spring.configuration.checksum": "ed257873fe6def2eee27568a1b75686f",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/programming/java/javaproject/BasicsFrame/Basics-frame-module/Basics-frame-module-blog/src/main/java/com/lh/frame/blog&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.23558164&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.sjhy.plugin.ui.MainSettingForm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ed257873fe6def2eee27568a1b75686f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -113,11 +113,11 @@
       <recent name="E:\programming\java\javaproject\BasicsFrame\Basics-frame-starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lh.frame.application.front.admin" />
+      <recent name="com.lh.frame.application.front.subject" />
       <recent name="com.lh.frame.subject.enums" />
       <recent name="com.lh.frame.subject.handler" />
       <recent name="com.lh.frame.subject.domain.vo.response" />
-      <recent name="com.lh.frame.subject.config" />
-      <recent name="com.lh.frame.common.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BasicsFrameApplication">
@@ -175,7 +175,8 @@
       <workItem from="1712734877778" duration="640000" />
       <workItem from="1712736643755" duration="11668000" />
       <workItem from="1712807473501" duration="17539000" />
-      <workItem from="1712827803287" duration="22927000" />
+      <workItem from="1712827803287" duration="24640000" />
+      <workItem from="1713012495176" duration="5066000" />
     </task>
     <servers />
   </component>

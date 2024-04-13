@@ -97,7 +97,7 @@ export default {
          * 获取用户列表
          */
         getUserList() {
-            getUserList().then(response => {
+            getUserList(this.queryParams).then(response => {
                 this.userList = response.data.result
                 this.total = response.data.total
                 this.currentPage = response.data.pageNo

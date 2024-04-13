@@ -1,4 +1,4 @@
-package com.lh.frame.application.admin.controller;
+package com.lh.frame.application.backend.admin.controller;
 
 import com.lh.frame.admin.domain.vo.request.SysUserReq;
 import com.lh.frame.admin.domain.vo.response.SysUserResp;
@@ -21,8 +21,8 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @RestController
-@RequestMapping("sysUser")
-public class SysUserController {
+@RequestMapping("/backend/sysUser")
+public class BackendSysUserController {
 
     @Resource
     private SysUserService sysUserService;
