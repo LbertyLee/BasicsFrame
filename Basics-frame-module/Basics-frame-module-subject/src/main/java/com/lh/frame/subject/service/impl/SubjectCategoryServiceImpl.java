@@ -44,6 +44,8 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
     @Resource
     private SubjectLabelService subjectLabelService;
 
+    @Resource
+    private ThreadPoolExecutor labelThreadPool;
 
     @Override
     public SubjectCategoryReq queryById(Long id) {
@@ -59,7 +61,7 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
      * 添加一个题目分类。
      *
      * @param subjectCategoryReq 包含要添加的题目分类信息的请求对象。
-     *                          该对象由外部传入，用来构建题目分类实体。
+     *                           该对象由外部传入，用来构建题目分类实体。
      * @throws RuntimeException 如果添加题目分类过程中发生异常，则抛出运行时异常。
      */
     @Override
@@ -75,6 +77,7 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
         }
 
     }
+
     /**
      * 删除题目分类
      *
@@ -84,7 +87,7 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
     @Override
     public void deleteCategory(Long categoryId) {
         log.info("SubjectCategoryServiceImpl.deleteCategory.categoryId:{}", categoryId);
-        if (this.checkCategory(categoryId)||this.checkLabel(categoryId)) {
+        if (this.checkCategory(categoryId) || this.checkLabel(categoryId)) {
             throw new SystemException("该分类下有子类目，不能删除");
         }
         try {
@@ -104,14 +107,14 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
         LambdaUpdateWrapper<SubjectCategory> eq = new LambdaUpdateWrapper<SubjectCategory>().eq(SubjectCategory::getParentId, categoryId);
         return subjectCategoryDao.selectCount(eq) > 0;
     }
+
     /**
      * 校验分类下是否有子标签
      */
     public boolean checkLabel(Long categoryId) {
         return subjectLabelDao.selectCount(
-                new LambdaQueryWrapper<SubjectLabel>().eq(SubjectLabel::getCategoryId, categoryId))>0;
+                new LambdaQueryWrapper<SubjectLabel>().eq(SubjectLabel::getCategoryId, categoryId)) > 0;
     }
-
 
 
     /**
@@ -129,7 +132,6 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
                             .eq(SubjectCategory::getIsDeleted, SystemConstants.NO_DELETE));
             // 将查询到的实体类列表转换为请求对象列表
             return SubjectCategoryEntityConverter.INSTANCE.convertEntityListToRespList(subjectCategories);
-
         } catch (Exception e) {
             // 若查询过程中出现异常，则抛出运行时异常
             throw new RuntimeException("查询题目分类大类失败");
@@ -138,36 +140,81 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
 
 
     /**
-     * 查询指定父类别的子类别列表。
+     * 查询指定分类下的子分类列表。
+     * 使用缓存机制，缓存键为categoryId的字符串形式加上固定前缀。
      *
-     * @param categoryId 父类别的ID，不能为空。
-     * @return 返回符合条件的子类别列表。如果查询结果为空，将返回空列表，而非抛出异常。
-     * @throws IllegalArgumentException 如果传入的parentId为null，将抛出此异常。
-     * @throws RuntimeException         如果查询过程中发生异常，将抛出此运行时异常。
+     * @param categoryId 分类的ID，如果为空则抛出IllegalArgumentException异常。
+     * @return 返回查询到的子分类响应列表，如果查询结果为空，则返回空列表。
      */
     @Override
-    @Cacheable(value =SubjectConstant.CATEGORY,key = "#categoryId.toString()+'-'")
+    @Cacheable(value = SubjectConstant.CATEGORY, key = "#categoryId.toString()+'-'")
     public List<SubjectCategoryResp> queryCategoryList(Long categoryId) {
-        log.debug("SubjectCategoryServiceImpl.CategoryList. id = {}", categoryId);
+        // 如果日志级别允许，输出调试信息
+        if (log.isInfoEnabled()) {
+            log.debug("SubjectCategoryServiceImpl.CategoryList. id = {}", categoryId);
+        }
         try {
+            // 检查categoryId是否为空
             if (StringUtils.isEmpty(categoryId)) {
                 throw new IllegalArgumentException("parentId cannot be null");
             }
+            // 查询子分类信息
             List<SubjectCategory> subjectCategories = subjectCategoryDao.selectList(
                     new LambdaQueryWrapper<SubjectCategory>()
                             .eq(SubjectCategory::getParentId, categoryId)
                             .eq(SubjectCategory::getIsDeleted, SystemConstants.NO_DELETE));
+            // 如果查询结果为空，直接返回空列表
             if (subjectCategories.isEmpty()) {
                 return Collections.emptyList();
             }
+            // 将查询到的分类实体转换为响应对象
             List<SubjectCategoryResp> subjectCategoryRespList =
                     SubjectCategoryEntityConverter.INSTANCE.convertEntityListToRespList(subjectCategories);
-            return this.querySubjectCategoryReqs(subjectCategoryRespList);
-//            return this.querySubjectCategoryReqsSerial(subjectCategoryReqs);
+            // 初始化用于存放标签响应对象的映射
+            Map<Long, List<SubjectLabelResp>> map = new HashMap<>();
+            // 创建异步任务列表，用于查询每个分类对应的标签列表
+            List<CompletableFuture<Map<Long, List<SubjectLabelResp>>>> completableFutureList =
+                    subjectCategoryRespList.stream().map(category -> CompletableFuture.supplyAsync(
+                            () -> this.getSubjectLabelList(category), labelThreadPool)).collect(Collectors.toList());
+            // 等待所有异步任务完成，并将结果合并到映射中
+            completableFutureList.forEach(future -> {
+                try {
+                    Map<Long, List<SubjectLabelResp>> resultMap = future.get();
+                    map.putAll(resultMap);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
+            // 将标签列表设置到每个分类响应对象中
+            subjectCategoryRespList.forEach(subjectCategoryResp -> {
+                subjectCategoryResp.setSubjectLabelRespList(map.get(subjectCategoryResp.getId()));
+            });
+            return subjectCategoryRespList;
         } catch (Exception e) {
+            // 记录查询失败的日志
             log.error("查询题目分类小类失败, parentId: {}", categoryId, e);
             throw new RuntimeException("查询题目分类小类失败", e);
         }
+    }
+
+    /**
+     * 获取指定学科类别的标签列表。
+     *
+     * @param subjectCategoryResp 学科类别响应对象，包含学科类别的ID。
+     * @return 返回一个映射，其中键是学科类别的ID，值是该类别下的标签列表。
+     */
+    private Map<Long, List<SubjectLabelResp>> getSubjectLabelList(SubjectCategoryResp subjectCategoryResp) {
+        // 如果日志级别允许，记录信息日志
+        if (log.isInfoEnabled()) {
+            log.info("SubjectCategoryServiceImpl.getSubjectLabelList.subjectCategoryResp{}", subjectCategoryResp);
+        }
+        // 创建一个映射，用于存储标签列表
+        Map<Long, List<SubjectLabelResp>> labelMap = new HashMap<>();
+        // 根据传入的学科类别ID，获取该类别的标签列表
+        List<SubjectLabelResp> labelList = subjectLabelService.getLabelList(subjectCategoryResp.getCategoryId());
+        // 将获取到的标签列表放入映射中
+        labelMap.put(subjectCategoryResp.getCategoryId(), labelList);
+        return labelMap;
     }
 
     /**
@@ -222,74 +269,19 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
      * 获取指定父节点的子节点列表。
      * 该方法通过遍历所有响应对象，筛选出父节点ID匹配指定ID的子节点，并收集到一个列表中返回。
      *
-     * @param subjectCategoryResp 父节点的响应对象
+     * @param subjectCategoryResp     父节点的响应对象
      * @param subjectCategoryRespList 所有响应对象的列表
      * @return List<SubjectCategoryResp> 返回指定父节点的子节点列表。
      */
     private List<SubjectCategoryResp> getChildList(SubjectCategoryResp subjectCategoryResp, List<SubjectCategoryResp> subjectCategoryRespList) {
-       if (subjectCategoryRespList.isEmpty()){
-           return new ArrayList<>();
-       }
+        if (subjectCategoryRespList.isEmpty()) {
+            return new ArrayList<>();
+        }
         // 筛选出父节点ID匹配指定ID的子节点并收集到一个列表中
         return subjectCategoryRespList.stream()
                 .filter(categoryResp -> categoryResp.getParentId().equals(subjectCategoryResp.getCategoryId()))
                 .collect(Collectors.toList());
     }
-
-
-
-    /**
-     * 串行查询主题类别请求信息
-     *
-     * @param subjectCategoryReqs 主题类别请求信息列表，每个请求包含一个主题类别的ID。
-     * @return 返回处理后的主题类别请求信息列表，每个请求额外包含了属于该类别的标签信息列表。
-     */
-    private List<SubjectCategoryResp> querySubjectCategoryReqsSerial(List<SubjectCategoryResp> subjectCategoryReqs) {
-        // 使用Stream API处理每个主题类别请求，为其添加相应的标签信息
-        return subjectCategoryReqs.stream().peek(subjectCategoryResp -> {
-            List<SubjectLabelResp> labelList = subjectLabelService.getLabelList(subjectCategoryResp.getCategoryId());
-            subjectCategoryResp.setSubjectLabelRespList(labelList);
-        }).collect(Collectors.toList());
-    }
-
-
-    /**
-     * 并行查询主题类别请求对应的标签列表。
-     * 该方法首先根据可用处理器数量和主题类别请求的数量来设定线程池的大小，以充分利用系统资源。
-     * 然后，为每个主题类别请求创建一个异步查询任务，并等待所有任务完成。
-     * 最后，将查询到的标签列表设置到相应的主题类别请求对象中，并返回处理后的主题类别请求列表。
-     *
-     * @param subjectCategoryRespList 主题类别请求列表，每个请求包含一个主题类别的ID。
-     * @return 处理后的主题类别请求列表，每个请求对象包含相应的标签列表。
-     */
-    private List<SubjectCategoryResp> querySubjectCategoryReqs(List<SubjectCategoryResp> subjectCategoryRespList) {
-        // 设定线程池大小，基于可用处理器数量和主题类别请求数量
-        int threadCount = Runtime.getRuntime().availableProcessors() * subjectCategoryRespList.size();
-        ExecutorService executor = Executors.newFixedThreadPool(threadCount);
-        try {
-            // 使用并行方式处理任务
-            Map<SubjectCategoryResp, CompletableFuture<List<SubjectLabelResp>>> futureMap = new HashMap<>();
-            for (SubjectCategoryResp subjectCategoryReqs : subjectCategoryRespList) {
-                // 为每个主题类别请求创建异步查询任务
-                CompletableFuture<List<SubjectLabelResp>> future = CompletableFuture.supplyAsync(
-                        () -> subjectLabelService.getLabelList(subjectCategoryReqs.getCategoryId()), executor
-                );
-                futureMap.put(subjectCategoryReqs, future);
-            }
-            // 等待所有异步任务完成
-            CompletableFuture.allOf(futureMap.values().toArray(new CompletableFuture<?>[0])).join();
-            // 统一获取并设置标签列表
-            futureMap.forEach((req, future) -> req.setSubjectLabelRespList(future.join()));
-            return subjectCategoryRespList;
-        }catch (Exception e){
-            // 异常处理
-            throw new RuntimeException("查询主题类别标签信息失败", e);
-        }finally {
-            // 关闭线程池
-            executor.shutdown();
-        }
-    }
-
 
 
 }

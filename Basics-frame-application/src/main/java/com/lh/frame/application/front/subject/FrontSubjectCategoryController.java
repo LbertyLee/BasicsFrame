@@ -1,5 +1,6 @@
 package com.lh.frame.application.front.subject;
 
+import com.google.common.base.Preconditions;
 import com.lh.frame.common.entity.Result;
 import com.lh.frame.common.utils.ResultBuild;
 import com.lh.frame.subject.domain.vo.response.SubjectCategoryResp;
@@ -29,7 +30,10 @@ public class FrontSubjectCategoryController {
      */
     @GetMapping("/query/list/{id}")
     public Result<List<SubjectCategoryResp>> queryCategoryList(@PathVariable  @Validated Long id){
-        log.info("SubjectCategoryController.queryCategoryList.id:{}",id); // 记录请求的ID信息
+        if (log.isInfoEnabled()){
+            log.info("SubjectCategoryController.queryCategoryList.id:{}",id); // 记录请求的ID信息
+        }
+        Preconditions.checkNotNull(id, "分类id不能为空");
         return ResultBuild.success(subjectCategoryService.queryCategoryList(id)); // 调用服务层方法查询分类列表，并包装成结果对象返回
     }
 

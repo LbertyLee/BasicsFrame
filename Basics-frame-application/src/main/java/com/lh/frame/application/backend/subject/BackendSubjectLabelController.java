@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 
 @Slf4j
 @RestController
-@RequestMapping("/subject/label")
+@RequestMapping("/backend/subject/label")
 public class BackendSubjectLabelController {
 
     @Resource

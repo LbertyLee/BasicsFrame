@@ -7,9 +7,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.sf.jsqlparser.expression.DateTimeLiteralExpression;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.time.LocalDateTime;
 
 @Data
@@ -23,13 +25,13 @@ public class BaseEntity implements Serializable {
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    public LocalDateTime createTime;
+    public Date createTime;
 
     //修改时间：INSERT_UPDATE 首次插入、其次更新时填充(或修改)
     @TableField(fill = FieldFill.INSERT_UPDATE)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    public LocalDateTime updateTime;
+    public Date updateTime;
 
     //创建人Id：INSERT_UPDATE 首次插入、其次更新时填充(或修改)
     @TableField(fill = FieldFill.INSERT_UPDATE)
