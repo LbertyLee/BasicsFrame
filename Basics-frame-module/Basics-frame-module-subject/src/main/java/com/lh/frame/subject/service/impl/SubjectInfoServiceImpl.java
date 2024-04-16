@@ -8,17 +8,14 @@ import com.lh.frame.common.entity.PageResult;
 import com.lh.frame.common.exception.SystemException;
 import com.lh.frame.subject.convert.SubjectInfoEntityConverter;
 import com.lh.frame.subject.dao.SubjectInfoDao;
-import com.lh.frame.subject.domain.dto.SubjectMappingDTO;
 import com.lh.frame.subject.domain.dto.SubjectOptionDTO;
 import com.lh.frame.subject.domain.vo.request.SubjectInfoReq;
 import com.lh.frame.subject.domain.vo.response.SubjectInfoResp;
-import com.lh.frame.subject.entity.SubjectCategory;
 import com.lh.frame.subject.entity.SubjectInfo;
 import com.lh.frame.subject.entity.SubjectLabel;
 import com.lh.frame.subject.entity.SubjectMapping;
 import com.lh.frame.subject.handler.SubjectTypeHandler;
 import com.lh.frame.subject.handler.SubjectTypeHandlerFactory;
-import com.lh.frame.subject.service.SubjectCategoryService;
 import com.lh.frame.subject.service.SubjectInfoService;
 import com.lh.frame.subject.service.SubjectLabelService;
 import com.lh.frame.subject.service.SubjectMappingService;
@@ -27,7 +24,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -43,8 +39,6 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
     @Resource
     private SubjectInfoDao subjectInfoDao;
 
-    @Resource
-    private SubjectCategoryService subjectCategoryService;
 
     @Resource
     private SubjectMappingService subjectMappingService;
@@ -135,10 +129,6 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public PageResult<SubjectInfoResp> queryPage(SubjectInfoReq subjectInfoReq) {
-        // 检查分页参数是否合法
-        if (subjectInfoReq.getPageNo() <= 0 || subjectInfoReq.getPageSize() <= 0) {
-            throw new IllegalArgumentException("Invalid page number or page size");
-        }
         // 初始化分页对象
         IPage<SubjectInfo> page = new Page<SubjectInfo>()
                 .setPages(subjectInfoReq.getPageNo()).setPages(subjectInfoReq.getPageSize());
@@ -186,21 +176,30 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
 
 
 
+
     /**
-     * 填充标签名称到SubjectInfoResp对象中
+     * 填充标签名称到主题信息响应对象中。
      *
-     * @param subjectInfoResp
+     * @param subjectInfoResp 主题信息响应对象，包含主题的详细信息，其中将标签名称列表作为响应的一部分进行设置。
      */
     private void fillLabelNames(SubjectInfoResp subjectInfoResp) {
+        // 创建一个SubjectMapping实例并设置主题ID
         SubjectMapping subjectMapping = new SubjectMapping().setSubjectId(subjectInfoResp.getSubjectId());
+        // 根据主题ID查询标签ID列表
         List<SubjectMapping> mappingList = subjectMappingService.queryLabelId(subjectMapping);
+        // 检查是否查询到标签ID列表
         if (!CollectionUtils.isEmpty(mappingList)) {
+            // 将标签ID列表转换为Long类型的列表
             List<Long> labelIdList = mappingList.stream().map(SubjectMapping::getLabelId).collect(Collectors.toList());
+            // 根据标签ID列表查询标签信息列表
             List<SubjectLabel> subjectLabelList = subjectLabelService.queryList(labelIdList);
+            // 将标签信息列表转换为标签名称列表
             List<String> labelNameList = subjectLabelList.stream().map(SubjectLabel::getLabelName).collect(Collectors.toList());
+            // 将标签名称列表设置到主题信息响应对象中
             subjectInfoResp.setLabelName(labelNameList);
         }
     }
+
 
 
 }

@@ -22,6 +22,8 @@ public class MybatisPlusConfig {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         // 向MybatisPlus拦截器链中添加分页拦截器
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        // 添加sql日志拦截器
+        interceptor.addInnerInterceptor(new MybatisPlusAllSqlLog());
         return interceptor;
     }
 
