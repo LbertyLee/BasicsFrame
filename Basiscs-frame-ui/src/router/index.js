@@ -5,6 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import { title } from '@/settings'
 
 export const constantRoutes = [
   {
@@ -75,6 +76,31 @@ export const constantRoutes = [
         component: () => import('@/views/club/category/index'),
         name: '分类管理',
         meta: { title: '分类管理',icon:'el-icon-tickets' }
+      }
+    ]
+  },
+
+  {
+    path: '/generator',
+    component: Layout,
+    redirect: '/generator',
+    name: '代码生成器',
+    meta: {
+      title: '代码生成器',
+      icon: 'el-icon-message-solid'
+    },
+    children: [
+      {
+        path: 'back',
+        component: () => import('@/views/generator/back/index'), 
+        name: '后端代码',
+        meta: { title: '后端代码',icon: '' },
+      },
+      {
+        path: 'back',
+        component: () => import('@/views/generator/back/index'), 
+        name: '前端代码',
+        meta: { title: '前端代码',icon: '' },
       }
     ]
   },

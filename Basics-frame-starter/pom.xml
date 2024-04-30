@@ -19,6 +19,7 @@
 
     <dependencies>
 
+        <!-- 基础框架依赖开始 -->
         <dependency>
             <groupId>com.lh.frame</groupId>
             <artifactId>Basics-frame-application</artifactId>
@@ -39,28 +40,29 @@
 
         <dependency>
             <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-commons-xxl-job</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-commons-mq</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.lh.frame</groupId>
             <artifactId>Basics-frame-commons-redis</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.lh.frame</groupId>
-            <artifactId>Basics-frame-module-task</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <!-- 基础框架依赖结束 -->
 
+        <!-- 可选的扩展功能依赖开始 -->
+        <!-- 调度框架Xxl-Job的依赖，当前未使用 -->
+        <!-- <dependency>-->
+        <!--     <groupId>com.lh.frame</groupId>-->
+        <!--     <artifactId>Basics-frame-commons-xxl-job</artifactId>-->
+        <!--     <version>1.0-SNAPSHOT</version>-->
+        <!-- </dependency>-->
+
+        <!-- 消息队列依赖，当前未使用 -->
+        <!-- <dependency>-->
+        <!--     <groupId>com.lh.frame</groupId>-->
+        <!--     <artifactId>Basics-frame-commons-mq</artifactId>-->
+        <!--     <version>1.0-SNAPSHOT</version>-->
+        <!-- </dependency>-->
+
+
+        <!-- 可选的扩展功能依赖结束 -->
 
 
     </dependencies>

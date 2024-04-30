@@ -32,6 +32,7 @@ build/
 !**/src/test/**/build/
 application-dev.yml
 application-prod.yml
+application-basics.yml
 application-test.yml
 .history
 ### VS Code ###

@@ -1,0 +1,3 @@
+分布式任务调度器;
+使用时在application.yml中配置quartz相关参数;
+将config目录下的配置文件添加Configuration注解;

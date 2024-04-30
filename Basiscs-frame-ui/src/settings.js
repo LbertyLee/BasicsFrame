@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: 'BascisFrame',
 
   /**
    * @type {boolean} true | false
