@@ -5,27 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ebc6ad-08c2-4220-8ee9-64d3896d25dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-xxl-job/package-info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application-basics.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/basic/EsIndexInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/basic/EsSearchRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/basic/EsSourceData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/config/EsClusterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/config/EsConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java/com/lh/frame/es/utils/EsRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/201fce5e-5174-4f07-8c01-0b6f8fc80271.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/demo/mq/MqSourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-application/src/main/java/com/lh/frame/application/backend/demo/mq/MqSourceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/DirectExchangeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/DirectExchangeSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/ProducerConsumerSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/ProducerConsumerSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/PublishSubscribeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/PublishSubscribeSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/TopicExchangeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/demo/TopicExchangeSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/entity/MqMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/entity/MqMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/FileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/source/FileSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/utils/RabbitMqUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java/com/lh/frame/rabbitmq/utils/RabbitMqUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-xxl-job/src/main/java/com/lh/frame/xxljob/config/XxlJobConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-xxl-job/src/main/java/com/lh/frame/xxljob/config/XxlJobConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/layout/components/Sidebar/Logo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basiscs-frame-ui/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/Basiscs-frame-ui/src/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generator/domain/FrameSubjectLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/service/DirectSourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-frame-module/Basics-frame-module-demo/src/main/java/com/lh/frame/demo/mq/service/DirectSourceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -52,8 +58,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../toos/apache-maven-3.8.6" />
-        <option name="useMavenConfig" value="true" />
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../../toos/apache-maven-3.8.6" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="userSettingsFile" value="E:\programming\toos\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -61,6 +67,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2eRu40awVfWxAqT9cHifUjbOsZd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,37 +78,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/programming/java/javaproject/BasicsFrame/Basics-frame-starter/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.23558164",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.MainSettingForm",
-    "spring.configuration.checksum": "a84a6e2f62e9c7a32d69685433da3195",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/programming/java/javaproject/BasicsFrame/Basics-frame-starter/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.23558164&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.sjhy.plugin.ui.MainSettingForm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cb19fd7ca6da0231671c04fadc680201&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -156,6 +166,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -183,7 +201,18 @@
       <workItem from="1713184444503" duration="6266000" />
       <workItem from="1713579138039" duration="659000" />
       <workItem from="1714446815951" duration="88000" />
-      <workItem from="1714446917423" duration="4572000" />
+      <workItem from="1714446917423" duration="5486000" />
+      <workItem from="1715248005603" duration="339000" />
+      <workItem from="1715304944392" duration="1212000" />
+      <workItem from="1715408109403" duration="1845000" />
+      <workItem from="1715411703312" duration="631000" />
+      <workItem from="1715429362704" duration="29000" />
+      <workItem from="1715926988476" duration="2045000" />
+      <workItem from="1716100868013" duration="1237000" />
+      <workItem from="1716182893222" duration="593000" />
+      <workItem from="1716253990985" duration="34000" />
+      <workItem from="1717052642578" duration="3303000" />
+      <workItem from="1717118036148" duration="988000" />
     </task>
     <servers />
   </component>

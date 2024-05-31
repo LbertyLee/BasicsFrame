@@ -5,7 +5,6 @@ import com.lh.frame.common.constant.mq.RabbitConstant;
 import com.lh.frame.rabbitmq.constant.RabbitBasicsConstant;
 import com.lh.frame.rabbitmq.entity.MqMessage;
 import com.lh.frame.rabbitmq.utils.RabbitMqUtil;
-import org.springframework.stereotype.Indexed;
 import org.springframework.stereotype.Service;
 
 
@@ -62,6 +61,10 @@ public class DirectSourceService {
         rabbitMqUtil.sendTopicMessage(RabbitConstant.TOPIC_NAME, message.getKey(), message.toString());
     }
 
+    /**
+     * 发送延迟消息。
+     * @param message
+     */
     public void delaySendMessage(MqMessage message) {
         Integer delayTime = 5000;
         rabbitMqUtil.sendDelayMessage(RabbitConstant.EXCHANGE_NAME,message.getKey(),message.toString(),delayTime);

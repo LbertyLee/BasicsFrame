@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-//@Component
+@Component
 public class RabbitMqUtil<T> {
 
     @Resource
@@ -44,7 +44,7 @@ public class RabbitMqUtil<T> {
     }
 
     /**
-     * 延迟消息
+     * 延迟队列模式
      */
     public void sendDelayMessage(String exchange, String routingKey, String dataMessage, Integer delayTime) {
         rabbitTemplate.convertAndSend(exchange, routingKey, dataMessage, message -> {

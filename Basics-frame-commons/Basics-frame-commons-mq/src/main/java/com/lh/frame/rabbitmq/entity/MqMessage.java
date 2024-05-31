@@ -37,7 +37,7 @@ public class MqMessage implements Serializable {
     /**发送人**/
     private String sender;
     /**
-     * ket
+     * key
      */
     private String key;
 

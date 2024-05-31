@@ -11,7 +11,7 @@ import java.util.HashMap;
 /**
  * 创建文件清理队列和交换机。
  */
-//@Configuration
+@Configuration
 public class FileSource {
     /**
      * 创建并返回一个直接交换器实例。
@@ -19,20 +19,20 @@ public class FileSource {
      *
      * @return DirectExchange 直接交换器的实例。
      */
-//    @Bean
-//    public CustomExchange customExchange() {
-//        HashMap<String, Object> arguments = new HashMap<>(2);
-//        arguments.put("x-delayed-type", "direct");
-//        return new CustomExchange(RabbitConstant.FILE_DELAYED_MESSAGE, RabbitBasicsConstant.X_DELAYED_MESSAGE
-//                , true, false, arguments);
-//    }
-//    @Bean
-//    public Queue fileQueue() {
-//        return new Queue(RabbitConstant.FILE_CLEAR_QUEUE, true);
-//    }
-//
-//    @Bean
-//    public Binding binding() {
-//        return BindingBuilder.bind(fileQueue()).to(customExchange()).with(RabbitConstant.FILE_CLEAR_KEY).noargs();
-//    }
+    @Bean
+    public CustomExchange customExchange() {
+        HashMap<String, Object> arguments = new HashMap<>(2);
+        arguments.put("x-delayed-type", "direct");
+        return new CustomExchange(RabbitConstant.FILE_DELAYED_MESSAGE, RabbitBasicsConstant.X_DELAYED_MESSAGE
+                , true, false, arguments);
+    }
+    @Bean
+    public Queue fileQueue() {
+        return new Queue(RabbitConstant.FILE_CLEAR_QUEUE, true);
+    }
+
+    @Bean
+    public Binding binding() {
+        return BindingBuilder.bind(fileQueue()).to(customExchange()).with(RabbitConstant.FILE_CLEAR_KEY).noargs();
+    }
 }

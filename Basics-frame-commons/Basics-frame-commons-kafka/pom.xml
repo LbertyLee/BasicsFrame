@@ -5,26 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lh.frame</groupId>
-        <artifactId>BasicsFrame</artifactId>
+        <artifactId>Basics-frame-commons</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>Basics-frame-commons</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>Basics-frame-commons-mybatis-plus</module>
-        <module>Basics-frame-commons-common</module>
-        <module>Basics-frame-commons-xxl-job</module>
-        <module>Basics-frame-commons-mq</module>
-        <module>Basics-frame-commons-redis</module>
-        <module>Basics-frame-commons-kafka</module>
-        <module>Basics-frame-commons-es</module>
-    </modules>
+    <artifactId>Basics-frame-commons-kafka</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

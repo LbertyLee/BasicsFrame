@@ -34,6 +34,7 @@ application-dev.yml
 application-prod.yml
 application-basics.yml
 application-test.yml
+application-kafka.yml
 .history
 ### VS Code ###
 .vscode/

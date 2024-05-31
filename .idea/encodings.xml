@@ -10,6 +10,8 @@
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-es/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Basics-frame-commons/Basics-frame-commons-mybatis-plus/src/main/java" charset="UTF-8" />
