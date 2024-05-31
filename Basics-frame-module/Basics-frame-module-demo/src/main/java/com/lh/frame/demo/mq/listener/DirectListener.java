@@ -12,7 +12,7 @@ public class DirectListener {
 
     @RabbitListener(queues = RabbitConstant.DIRECT_QUEUE_NAME1)
     public void displayMail(String message) throws Exception {
-        log.info("DirectListener接收到directqueue1的消息：" + message);
+        log.info("DirectListener接收到directqueue1的消息：{}", message);
     }
 
 

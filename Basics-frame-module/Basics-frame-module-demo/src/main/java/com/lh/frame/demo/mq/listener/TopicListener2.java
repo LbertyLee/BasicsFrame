@@ -14,6 +14,6 @@ public class TopicListener2 {
 	
 	@RabbitListener(queues = RabbitConstant.TOPIC_QUEUE_NAME_WTO)
 	public void displayTopic(String message) throws IOException {
-		log.info("从topicqueue2取出消息:"+message);
+        log.info("从topicqueue2取出消息:{}", message);
 		}
 }

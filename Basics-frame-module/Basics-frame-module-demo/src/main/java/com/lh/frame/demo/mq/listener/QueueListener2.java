@@ -13,6 +13,6 @@ public class QueueListener2 {
 
     @RabbitListener(queues = RabbitConstant.QUEUE_NAME)
     public void displayMail2(String message){
-        log.info("队列监听器2收到消息"+message);
+        log.info("队列监听器2收到消息{}", message);
     }
 }

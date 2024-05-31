@@ -10,6 +10,6 @@ import org.springframework.stereotype.Component;
 public class SubscribeListener1 {
     @RabbitListener(queues = RabbitConstant.TOPIC_QUEUE_NAME)
     public void subscribe(String message) {
-        log.info("订阅者1收到消息:"+message);
+        log.info("订阅者1收到消息:{}", message);
     }
 }

@@ -12,7 +12,7 @@ import java.io.IOException;
 public class TopicListener1 {
     @RabbitListener(queues = RabbitConstant.TOPIC_QUEUE_NAME)
     public void displayTopic(String message) throws IOException {
-        log.info("从topicqueue1取出消息:" + message);
+        log.info("从topicqueue1取出消息:{}", message);
 
     }
 }
